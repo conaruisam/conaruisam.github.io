@@ -1,3 +1,7 @@
+.container-fluid {
+    background-color: rgba(224, 224, 224, 0.7);
+}
+
 /* HEADER STYLES */
 header nav {
     background-color: #4CAF50 ;
@@ -5,13 +9,13 @@ header nav {
 
 .encabezado_isam {
     color: white;
-    
+    margin-left: 15px;
     font-size: 30px;
 }
 
 
 .nav-link {
-   padding: 20px;
+   padding: 15px 8px !important;
    color: white;
 }
 
@@ -38,4 +42,12 @@ nav ul li a:hover {
 
 .columnsmain {
     padding-top: 65px;
+}
+
+
+
+/* FOOTER */
+footer .row {
+    padding: 40px;    
+    color: white;
 }
