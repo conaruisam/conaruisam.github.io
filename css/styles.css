@@ -1,5 +1,26 @@
 
 header nav {
-    text-underline-position: none;
+    position: sticky;
+    background-color: #4CAF50 !important ;
+}
+
+.encabezado_isam {
     color: white;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+
+    /* HOVER SOMBRA DE ABAJO. */
+    transition: all .3s ease-in;
+    box-shadow:  0 -2px 0 0 white inset;    
+}
+
+nav ul li a:active {
+    color: black;
+    background-color:;
 }
