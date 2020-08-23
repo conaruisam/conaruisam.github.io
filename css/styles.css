@@ -1,26 +1,41 @@
-
+/* HEADER STYLES */
 header nav {
-    position: sticky;
-    background-color: #4CAF50 !important ;
+    background-color: #4CAF50 ;
 }
 
 .encabezado_isam {
     color: white;
+    
+    font-size: 30px;
 }
 
-nav ul li a {
-    color: white;
+
+.nav-link {
+   padding: 20px;
+   color: white;
 }
 
-nav ul li a:hover {
-    background-color: #fff;
+/* nav ul li a {
+    
+    color: white;    
+} */
+
+nav ul li a:hover {    
 
     /* HOVER SOMBRA DE ABAJO. */
     transition: all .3s ease-in;
     box-shadow:  0 -2px 0 0 white inset;    
 }
 
-nav ul li a:active {
+/* Para el scrollspy */
+
+#main-nav .active{
     color: black;
-    background-color:;
+    background: rgba(40, 167, 69, 1);;
+}
+
+/* MAIN STYLES */
+
+.columnsmain {
+    padding-top: 65px;
 }
