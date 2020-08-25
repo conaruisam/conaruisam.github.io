@@ -1,13 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+  
 .container-fluid {
     background-color: rgba(224, 224, 224, 0.7);
 }
 
 /* HEADER STYLES */
 header nav {
-    /* background-color: rgba(0, 39, 110,1); */
-    /* background-color: transparent; */
-    /* background-image: linear-gradient(to top, rgba(0, 50, 140,1), rgba(0, 39, 110,1)); */
+    background:transparent;
+    transition:0.65s ease;
 }
+
+/* Para el scrollspy */
+
+#main-nav.scrolled {
+    background: rgb(19, 51, 110) !important;
+}
+
+#main-nav .act .active{
+    opacity: 1;
+    color: white;
+    background: rgba(0, 39, 110, 1);
+}
+
 .nav_isam {
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
@@ -18,53 +34,28 @@ header nav {
 
 
 .nav-link {
-   padding: 15px 8px !important;
-   opacity: 0.6;
+   padding: 15px 15px !important;
+   opacity: 0.7;
    color: white;
 }
 
-/* nav ul li a {
-    
-    color: white;    
-} */
-
+/* HOVER SOMBRA DE ABAJO. */
 nav ul li a:hover {    
-    /* HOVER SOMBRA DE ABAJO. */
     color: white;
     opacity: 1;
     transition: all .3s ease-in;    
     box-shadow:  0 -2px 0 0 white inset; 
 }
 
-#main-nav {
-    background:transparent !important;
-    transition:0.75s ease;
-}
-
-#main-nav.scrolled {
-    background: rgb(19, 51, 110) !important;
-}
-
-/* Para el scrollspy */
-
-#main-nav .active{
-    opacity: 1;
-    color: white;
-    background: rgba(0, 39, 110, 1);
-}
 
 /* MAIN STYLES */
 
 .columnsmain {
     margin-top: 70px;
-    /* background-color: rgb(0, 39, 110); */
 }
 
 #inicio {
     color: white;
-    /* background-image: linear-gradient(to bottom, rgba(0, 39, 110,0.8), rgba(0, 39, 110,.7)); */
-    /* background-color: rgba(0, 39, 110,1); */
-    /* background-color: #022a73; */
     height: 500px;
     background-image: url("../img/cabecera.jpg");
     opacity: 1;
