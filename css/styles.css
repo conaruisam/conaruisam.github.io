@@ -8,15 +8,16 @@ html {
     color: #333;
 }
 
-/* HEADER STYLES */
-header nav {
-    background:transparent;
-    transition:0.65s ease;
-}
+/* 
+*********************************** 
+        HEADER STYLES
+***********************************
+*/
 
 /* Para el scrollspy */
 
-#main-nav.scrolled {
+#main-nav.scrolled, #main-nav.buttonaso  {
+    transition: 1s ease;
     background: rgb(19, 51, 110) !important;
 }
 
@@ -27,7 +28,8 @@ header nav {
 }
 
 .nav_isam {
-    color: white;
+    color: white; 
+    text-shadow: #474747 3px 5px 2px;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: -1px;
     margin-left: 15px;
@@ -71,41 +73,252 @@ nav ul li a:hover{
   color: white;
 }
 
-/* MAIN STYLES */
+
+
+
+/* 
+*********************************** 
+        MAIN STYLES
+***********************************
+*/
 
 .columnsmain {
     margin-top: 70px;
 }
 
+/* PARA LA IMAGEN DE LA CABECERA, DEPENDIENDO SI ES MOVIL O ALGO MÁS GRANDE. */
+@media (min-width: 767px) {
+    #inicio {        
+      background-image: url(../img/cabecera_movil.jpg);
+    }
+  }
+
+@media (max-width: 767px) {
+    #inicio {
+    background-image: url("../img/cabecera.jpg");  
+    }
+  }
+
 #inicio {
     color: white;
-    height: 500px;
-    background-image: url("../img/cabecera.jpg");
+    height: 100vh;
     opacity: 1;
+    /* BG-IMAGE */
+    background-position: center left;          
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
 }
 
-.encabezado_isam {
-    color: white;
+
+/* ICONS MAIN STYLES  */
+/* ICONOS EN MÓVIL O EN ORDENADOR. */
+@media (min-width: 767px) {
+    .icon-laptop {        
+        font-size: 100px;
+    }
+    
+    .icon-plus {
+        font-size: 25px;
+    }    
+
+    .icon-coffee {
+        font-size: 100px;
+    }
+
+    .icon-eq-outline {
+        font-size: 25px;
+    }  
+  }
+
+@media (max-width: 767px) {
+    .icon-laptop {        
+        font-size: 50px;
+    }
+    .icon-plus {
+        font-size: 15px;
+    }
+    .icon-coffee {
+        font-size: 50px;
+    }  
+    .icon-eq-outline {
+        font-size: 15px;
+    }  
+  }
+
+.icon-laptop:hover:before {
+	-webkit-animation: toTopFromBottom 0.6s forwards;
+	-moz-animation: toTopFromBottom 0.6s forwards;
+	animation: toTopFromBottom 0.6s forwards;
+}
+
+@-webkit-keyframes toTopFromBottom {
+	49% {
+		-webkit-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toTopFromBottom {
+	49% {
+		-moz-transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toTopFromBottom {
+	49% {
+		transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+.icon-coffee:hover:before {
+	-webkit-animation: toBottomFromTop 0.6s forwards;
+	-moz-animation: toBottomFromTop 0.6s forwards;
+	animation: toBottomFromTop 0.6s forwards;
+}
+
+@-webkit-keyframes toBottomFromTop {
+	49% {
+		-webkit-transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toBottomFromTop {
+	49% {
+		-moz-transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toBottomFromTop {
+	49% {
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+.icon-plus:hover:before  {
+	-webkit-animation: spinAround 4s linear infinite;
+	-moz-animation: spinAround 4s linear infinite;
+	animation: spinAround 4s linear infinite;
+}
+
+.icon-eq-outline:hover:before  {
+	-webkit-animation: spin 4s linear infinite;
+	-moz-animation: spin 4s linear infinite;
+	animation: spin 4s linear infinite;
+}
+/* Una pequeña funciona para rotar los iconos. */
+
+@-webkit-keyframes spinAround {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spinAround {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(360deg)
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes spin {
+	from {
+		-moz-transform: rotate(360deg)
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(360deg)
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+.encabezado_isam {    
+    color: white;    
+    text-shadow: #474747 3px 5px 2px;
     font-family: 'Segoe UI';
-    margin-left: 15px;
     font-size: 55px;
     font-weight: bold;
 }
 
-.me {
-    font-family: 'Segoe UI';
+.encabezado_isam_mobile {    
+    color: white;
+    text-shadow: #474747 3px 5px 2px;
+    font-size: 25px;
     font-weight: bold;
+}
+
+.p_aboutme {
     font-size: 25px;
 }
-.texto_encabezado {
-    font-family: Georgia, Serif;
-}
 
-
-/* FOOTER */
+/* 
+*********************************** 
+        FOOTER STYLES.
+***********************************
+*/
 footer .row {
     padding: 40px;    
     color: white;
