@@ -89,13 +89,13 @@ nav ul li a:hover{
 /* PARA LA IMAGEN DE LA CABECERA, DEPENDIENDO SI ES MOVIL O ALGO MÁS GRANDE. */
 @media (min-width: 767px) {
     #inicio {        
-      background-image: url(../img/cabecera_movil.jpg);
+      background-image: url(../img/cabecera_movil.png);
     }
   }
 
 @media (max-width: 767px) {
     #inicio {
-    background-image: url("../img/cabecera.jpg");  
+    background-image: url("../img/cabecera.png");  
     }
   }
 
