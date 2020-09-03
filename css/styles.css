@@ -109,6 +109,10 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 
