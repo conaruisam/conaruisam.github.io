@@ -90,7 +90,11 @@ nav ul li a:hover{
 @media (min-width: 767px) {
     #inicio {        
       background-image: url(../img/cabecera_movil.png);
-      background-position:center; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;    
     }
   }
 
@@ -105,12 +109,11 @@ nav ul li a:hover{
 @media (max-width: 767px) {
     #inicio {
     background-image: url("../img/cabecera.png");  
-    background-attachment:scroll; 
-    -o-background-size:cover; 
-    -moz-background-size:cover; 
-    -webkit-background-size:cover; 
-    background-size:cover; 
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     }
   }
 
