@@ -93,6 +93,19 @@ nav ul li a:hover{
     }
   }
 
+@media only screen and (max-width: 959px) {
+    body:before {
+    content: "";
+    background-image: url(../img/cabecera_movil.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
+
 @media (max-width: 767px) {
     #inicio {
     background-image: url("../img/cabecera.png");  
