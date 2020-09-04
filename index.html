@@ -17,6 +17,7 @@
     -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/calcularEdad.js"></script>
     <script src="js/typed.js-master/lib/typed.min.js"></script>
     <!-- GOOGLE ANALYTICS -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -94,18 +95,21 @@
         
         <div class="row" id="aboutme">
             <div class="col columnsmain aboutme">
-                <h2 data-aos="fade-down-right">Sobre mí</h2>
+                <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
                 <div class="p_aboutme">
                     <p data-aos="flip-up">
                         ¡Hola, mundo!
                     </p>
                     <p data-aos="flip-down">
-                        Desde muy pequeño siempre me han gustado los ordenadores y <span class="font-italic">cacharrear</span> con ellos, mi primer ordenador en concreto fue a los 8 años.<br>
-                        A partir de ese momento siempre han formado parte de mi vida, ya sea por aprendizaje, hobby o trabajo.
+                        Desde muy pequeño siempre me han gustado los ordenadores y <span class="font-italic">cacharrear</span> con ellos.<br>
+                        Desde que tuve un ordenador siempre han formado parte de mi vida, ya sea por aprendizaje, hobby o trabajo.
                     </p>
                     <p data-aos="flip-down">
                         Al terminar la E.S.O. decidí cursar un CFGM de Sistemas Microinformáticos y Redes (SMR), yo sabía que me gustaba la informática pero no sabía que campo dedicarme en concreto. <br>
                         Al finalizarlo descubrí mi pasión, la <span class="font-weight-bold">programación</span>.
+                    </p>                      
+                    <p data-aos="flip-down">
+                        Si una palabra me definiera sería autodidacta.
                     </p>                
                 </div>
                 
@@ -125,10 +129,13 @@
                         <div class="flag-wrapper">
                           <span class="hexa"></span>
                           <span class="flag" data-aos="zoom-out">Nacimiento.</span>
-                          <span class="time-wrapper" data-aos="flip-right"><span class="time">Jul 1999</span></span>
+                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul 1999</span></span>
                         </div>
-                        <div class="desc" data-aos="flip-down">
-                            Nací en Madrid, el 30 de julio de 1999. 
+                        <div class="desc" data-aos="fade-down">
+                            Nací en Madrid, el 30 de julio de 1999. <br>
+                            <script>                                
+                                document.write("Tengo "+getEdad("1999/07/30 11:30:00")+" años")
+                            </script>                            
                         </div>
                       </div>
                     </li>
@@ -139,9 +146,9 @@
                         <div class="flag-wrapper">
                           <span class="hexa"></span>
                           <span class="flag" data-aos="zoom-in">Mi primer ordenador</span>
-                          <span class="time-wrapper" data-aos="flip-right"><span class="time">Feb 2007</span></span>
+                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Feb 2007</span></span>
                         </div>
-                        <div class="desc" data-aos="flip-left">
+                        <div class="desc" data-aos="fade-left">
                             Mis padres por esta época decidieron emprender y necesitaban un ordenador para llevar las finanzas de su negocio etc.
                             Éste ordenador lo utlizaba yo siempre que ellos no estaban con él.
                         </div>
@@ -153,55 +160,140 @@
                       <div class="direction-r">
                         <div class="flag-wrapper">
                           <span class="hexa"></span>
-                          <span class="flag" data-aos="zoom-in">Educación Secundaria</span>
-                          <span class="time-wrapper" data-aos="flip-right"><span class="time">Jul 2016</span></span>
+                          <span class="flag" data-aos="zoom-in">PRE-ESO</span>
+                          <span class="time-wrapper" data-aos="fade-right"><span class="time">2007 - 2016</span></span>
                         </div>
-                        <div class="desc" data-aos="flip-down">
-                            Este año finalicé la ESO, en la que aprendí un montón de cosas pero sobretodo de ciertos profesores aprendí que hay que ser constante y disciplinado, sobretodo si hay algo que te gusta y quieres llegar alto.
+                        <div class="desc" data-aos="fade-down">
+                            Toda esta étapa aprendí como funcionaban las piezas de un ordenador, como montarlos y realizarles un mantenimiento correcto. <br>
+                            Arreglé y monté equipos de otros amigos y conocidos
                         </div>
                       </div>
                     </li>
 
                     <!-- Item 4 -->
                     <li>
-                        <div class="direction-l">
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <span class="flag" data-aos="zoom-in">Educación Secundaria</span>
+                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul 2016</span></span>
+                        </div>
+                        <div class="desc" data-aos="fade-down">
+                            Finalicé la ESO, en la que aprendí un montón de cosas pero sobretodo de ciertos profesores aprendí que hay que ser constante y disciplinado, sobretodo si hay algo que te gusta y quieres llegar alto.
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Item 5 -->
+                    <li>
+                        <div class="direction-r">
                           <div class="flag-wrapper">
                             <span class="hexa"></span>
                             <span class="flag" data-aos="zoom-in">SMR</span>
-                            <span class="time-wrapper" data-aos="flip-right"><span class="time">Sept 2016</span></span>
+                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Sept 2016</span></span>
                           </div>
-                          <div class="desc" data-aos="flip-left">
-                            Comencé mi ciclo formativo, en el cual ya me centré en la informática; <br>
-                            Aprendí un montón sobre como funcionan
+                          <div class="desc" data-aos="fade-left">
+                            Absorbí nuevos conocimientos, de redes, los protocolos, como funcionan las IPs etc. <br>
+                            <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank">Este</a> documento es un trabajo de lo que aprendí (Lo hice para DAM).                            
+                            En sistemas aprendí a crear maquinas virtuales, sistemas de archivos... etc. <br>
+                            Pero lo que más me atrajo fue aplicaciones web, en la que aprendí las bases del desarrollo web front-end. <br>
+                            <div>
+                                <img src="img/logos/dwicons.png" width="200" height="150" class="imgtimeline"><br>
+                            </div>
+                            También saqué la titulación de CCNA1.
                           </div>
                         </div>
-                      </li>                    
-                      <!-- Item 5 -->
-                      <li>
-                          <div class="direction-r">
-                            <div class="flag-wrapper">
-                              <span class="hexa"></span>
-                              <span class="flag" data-aos="zoom-in">Prácticas NIMBEO</span>
-                              <span class="time-wrapper" data-aos="flip-right"><span class="time">Sep 2016</span></span>
-                            </div>
-                            <div class="desc" data-aos="flip-down">
-                                Al escoger el CFGM, escogí la modalidad de FCT ampliada
-                            </div>
-                          </div>
-                        </li>
-                  </ul>
+                    </li>
 
-  
+                    <!-- Item 6 -->
+                    <li>
+                        <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag" data-aos="zoom-in">Prácticas NIMBEO</span>
+                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Sep 2017</span></span>
+                        </div>
+                        <div class="desc" data-aos="fade-down" >
+                            Al elegir el CFGM, escogí la modalidad de FCT ampliada y estuve 9 meses de prácticas en NIMBEO, una empresa de desarrollo de Software.
+                            En la cual reforcé mis conocimientos de desarrollo web y aprendí AngularJS y JQuery.
+                            Todo ello de forma autodidacta haciendo los cursos en <br>
+                            <div>
+                                <a href="https://www.w3schools.com/" target="_blank"><img src="img/logos/W3Schools_logo.png" alt="" width="100" height="100" class="imgtimeline"></a>
+                            </div> <br>
+                            Sobretodo aprendí lo importante que es en esta industria formarte constantemente, y a mí personalmente me gusta de forma autodidacta.
+                        </div>
+                        </div>
+                    </li>
+
+                    <!-- Item 7 -->
+                    <li>
+                        <div class="direction-r">
+                          <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag" data-aos="zoom-in">Programador COBOL Indra</span>
+                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Ago 2018</span></span>
+                          </div>
+                          <div class="desc" data-aos="fade-left">
+                            El mes de agosto realicé un curso presencial intensivo de 3 semanas, en él aprendí SQL, COBOL 
+                            y reforcé mis conocimientos de Linux, posteriormente entré a un proyecto de banca en Indra de COBOL sobre UNIX. <br>
+
+                            El cual estuve 1 año y 3 meses, los cuales estoy muy agradecido de todo lo que he aprendido tanto técnicamente hablando como funcionalmente.
+                            
+                            Aprendí sobretodo de contabilidad financiera, 
+                          </div>
+                        </div>
+                    </li>
+
+                    <!-- Item 8 -->
+                    <li>
+                        <div class="direction-l">
+                          <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag" data-aos="zoom-in">COBOL Migración</span>
+                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Nov 2019</span></span>
+                          </div>
+                          <div class="desc" data-aos="fade-left">
+                              En noviembre de 2019 participé en una migración de Caixa Geral a ABANCA. <br>
+                              Mi tarea principal era servir de apoyo a la gente de CAIXA GERAL revisando las dudas por parte de abanca, analizando como los procesos trataban a los datos etc. <br>
+                              En este trabajo utilicé z/OS Mainframe
+                          </div>
+                        </div>
+                    </li>                    
+                  </ul>  
             </div>
         </div>
 
-        <div class="row" id="knowledge"  data-aos="fade-right">
-            <div class="col columnsmain">
-                <h2>Conocimiento</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quia placeat explicabo sint alias quis! Aspernatur, optio nam? Ducimus, fuga a excepturi iusto suscipit id, consequatur iste mollitia dicta laborum praesentium, quasi voluptatem. Cupiditate aspernatur est quas sint quia, illo in perspiciatis laboriosam optio, tenetur nulla temporibus necessitatibus porro inventore?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt animi magni nostrum! Iure dolores dolorem optio, similique explicabo nesciunt? Pariatur, laborum libero iste minus aliquid cupiditate tempore rem omnis magnam! Inventore quis minus nihil molestiae dolorem consectetur maxime velit qui esse corrupti, provident praesentium aliquid hic impedit corporis officiis eos quod dolorum placeat natus facilis reprehenderit atque nostrum? Eveniet eos nesciunt vel enim quas dolorum earum ipsa distinctio, quasi eaque, saepe voluptates adipisci error sint quaerat id accusamus non veniam, sunt atque. Dolore minima ipsum odit ipsam quisquam soluta.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut beatae suscipit optio placeat aliquam aspernatur tenetur! Amet sed, quis debitis expedita natus aliquid adipisci et accusantium nesciunt blanditiis tempore nemo quibusdam neque, recusandae culpa? Dolor eaque tenetur iure molestiae est magnam ipsum libero rem optio vitae facilis cum ea nihil sit unde non eum fugiat deserunt, atque maiores! Officiis sit ea tempora minima. Nemo, sequi magni doloremque nostrum culpa officiis reiciendis esse. Error est rerum ipsam unde possimus, porro ducimus iusto mollitia maxime consequatur sint nemo odit aspernatur quasi recusandae? Quis praesentium quaerat eos in nulla voluptas neque adipisci! Ipsam sunt dignissimos laudantium laboriosam ut magnam vitae ipsa. Veniam consequatur iure, totam nemo non accusantium asperiores nam dignissimos tempora debitis sint deleniti, officia dolorem, amet veritatis facilis iusto doloremque eos suscipit quaerat libero accusamus? Alias assumenda fuga, atque cum sequi accusantium saepe? Aliquid laboriosam itaque, dignissimos autem officiis iure placeat mollitia culpa ipsum molestiae repellendus quae, eius est ex magnam nesciunt, consequuntur tempora quo nostrum eos velit maxime. Cum consequatur tempore saepe nemo distinctio perspiciatis molestias, incidunt veniam autem quos? Mollitia culpa sapiente nesciunt deserunt laboriosam adipisci provident at deleniti, similique, veniam accusamus ipsum consequatur voluptate dolorum, commodi maiores sint necessitatibus hic assumenda distinctio eos? Hic minima quod ipsum soluta recusandae? Dolorem at fugiat dicta et, quae eveniet, quasi unde dolor harum aspernatur aliquam ratione totam molestiae! Inventore rerum asperiores animi nobis voluptates illo a dolorum, voluptate laborum qui ea consequuntur, nostrum dignissimos debitis commodi magnam suscipit numquam quia est autem repellendus accusamus distinctio explicabo. Vitae dolores laudantium, eius impedit eum saepe consequuntur cumque facere ipsum voluptates veritatis recusandae sint enim repellendus laboriosam? Tenetur eveniet porro vero qui! Reprehenderit enim quae molestias. Harum beatae temporibus voluptate possimus expedita? Laudantium sit soluta, eligendi quo dolorem at commodi explicabo! Ea adipisci perferendis asperiores maiores? Repudiandae explicabo accusamus quisquam soluta esse et! Id deleniti aut voluptatem, facere voluptate, ratione eius exercitationem fuga animi rem ab corrupti. Eum ullam assumenda nam itaque quis veniam, officiis distinctio impedit repudiandae explicabo eveniet porro fuga blanditiis repellat sit. At deleniti ad, est, ab eum quas aspernatur neque, perferendis dolor accusamus enim nam sit fugiat rerum laudantium culpa cumque blanditiis impedit earum placeat. Odio tenetur cumque voluptas et dolore. Alias, quae inventore facilis nostrum, neque quas possimus, eos placeat ab tempore libero qui cupiditate unde pariatur iusto. Odio harum, exercitationem consequuntur inventore illo sequi itaque voluptatum molestiae ratione quis vel, eius nostrum enim debitis iusto et libero explicabo. Ex adipisci quos eius, veniam necessitatibus, distinctio nam ad vel quia omnis expedita voluptatum blanditiis ut consectetur tempora. Ducimus similique incidunt impedit reprehenderit. Ipsum libero, ducimus inventore aut, dolor accusantium quibusdam consectetur harum mollitia, maxime expedita saepe repellat tempora ipsam quis sunt atque nihil dicta culpa alias minima. Eum ratione odio veniam expedita commodi ipsam sapiente itaque distinctio nemo cupiditate eligendi nobis, velit consectetur officia voluptate id ad! Voluptates consectetur doloribus eveniet unde provident minus natus non error quisquam ab, porro voluptatum minima, quasi atque fugiat rem odit eaque, voluptatem officiis debitis commodi obcaecati est. Omnis, dolor. Ipsam illum suscipit unde at fugiat aperiam iusto repellat iste, officiis exercitationem labore, culpa et reprehenderit ad veritatis, iure recusandae animi nobis quis eum quo ipsum. Consectetur cumque, temporibus deleniti rem, impedit culpa saepe earum quidem ea unde nesciunt odit laboriosam, nulla asperiores sapiente! Dolores eum corrupti nisi modi facilis, autem, quas explicabo cupiditate odio pariatur veniam voluptatibus maxime accusantium fugit possimus sed voluptate totam! Sequi excepturi culpa nesciunt reprehenderit eveniet autem earum magnam in tempora molestias repudiandae quidem numquam qui mollitia ratione aliquam maiores, sit nemo voluptate ut. Id, at suscipit. Nam quibusdam corporis, ea mollitia provident impedit autem velit fugiat deleniti itaque, nisi aspernatur quisquam. Voluptatum, mollitia facere sunt, earum, minima rem dolores inventore libero nulla omnis tempore dignissimos non a cumque culpa esse saepe quas enim dicta? Neque alias officia eius corporis voluptatem vitae harum sint. Temporibus maxime molestiae placeat natus ducimus amet ea laudantium molestias, expedita incidunt exercitationem repellendus vitae aut in, sed modi voluptatum repellat quo saepe? Cupiditate recusandae quisquam, alias voluptatem, facere fugiat corrupti, eaque illum quia ad aperiam odit rerum ea. Debitis aperiam accusantium magni, illum quis ullam ipsam ratione neque reprehenderit, quas iusto quibusdam dignissimos tempora vel nobis harum quidem laborum accusamus exercitationem alias nemo dolore sequi voluptate. Aspernatur, distinctio. Laudantium reprehenderit eos sapiente odio fuga tempora quidem natus, deserunt voluptatem. Eius nisi, accusamus architecto repellat laborum error! Placeat quisquam optio distinctio accusantium praesentium eveniet ullam molestias labore veritatis, fugit repellendus quae eum quasi cumque! Sapiente natus sit, eaque voluptatem nulla aliquid, accusantium possimus fuga veniam voluptatibus, obcaecati iure deserunt eveniet rerum suscipit earum consectetur ipsam aspernatur impedit? Ipsum sit dolore molestiae nostrum veniam corrupti, numquam tenetur incidunt, debitis, nemo nam a quia sapiente! Iure possimus quidem recusandae dolore adipisci! Ipsum, odit possimus nihil labore tempora facere iste nesciunt, officiis mollitia aliquam praesentium magni assumenda? Ratione, repellendus autem? Cumque enim repudiandae aliquid tempore ex temporibus, omnis illo facere aliquam blanditiis labore perferendis deserunt adipisci fugit voluptatum earum modi ullam nesciunt totam eveniet quis sit tempora non debitis! Repellat dolorum odit vero dolor cum placeat perspiciatis laborum saepe? Fuga molestiae dolorem voluptas iste, blanditiis minima saepe repellat esse quia! Illo eos harum voluptatibus veritatis. Neque hic sed amet minima, labore esse quod animi officiis quisquam obcaecati inventore repudiandae consequuntur perspiciatis voluptate itaque, deserunt quam quos placeat dignissimos et vel consequatur. Facilis blanditiis molestiae minima officia ut adipisci possimus, iure facere omnis illo sequi, quae ex ratione quaerat atque sed! Ipsum nesciunt inventore eveniet asperiores aperiam praesentium saepe consectetur totam eligendi quam, obcaecati, vero expedita accusantium accusamus esse quod, ipsam temporibus velit dignissimos repudiandae ad mollitia libero? Aspernatur quisquam labore vitae natus voluptatibus suscipit animi vel facere velit reiciendis officiis tempore repellendus fugit, pariatur, saepe enim! Numquam deserunt magnam quisquam rem, et libero labore voluptas praesentium, iusto, corporis necessitatibus quasi voluptatibus dolorem aliquam tenetur reiciendis. Tempora dignissimos cum quae hic distinctio alias magnam praesentium, voluptates iure vitae repellendus illum beatae atque aperiam, autem dolore voluptatem pariatur.</p>
-            </div>
+        <div class="row mb-5" id="knowledge"  data-aos="flip-down">
+            <div class="col">
+                <h2 class="text-center">Conocimiento</h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span>COBOL</span>
+                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;">90%</div><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span>SQL</span>
+                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;">90%</div><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span>C++</span>
+                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;">70%</div><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span>Java</span>
+                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;">70%</div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </main>
 
@@ -236,7 +328,6 @@
 
         $(window).scroll(function(){
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 790);
-            /*$('nav').removeClass('active', $(this).scrollTop() > 400); */
         });
         
         function cambiarClase(comp){
@@ -245,6 +336,7 @@
      
         }
     </script>
+    <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
