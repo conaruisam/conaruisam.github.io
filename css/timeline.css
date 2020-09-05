@@ -81,7 +81,7 @@
   width: 16px;
   height: 10px;
   position: absolute;
-  background: rgb(19, 51, 110) !important;
+  background: rgb(23, 32, 42) !important;
   z-index: 5;
   left: 0;
   right: 0;
@@ -92,7 +92,7 @@
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid rgb(19, 51, 110) !important;
+  border-bottom: 4px solid rgb(23, 32, 42) !important;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -101,7 +101,7 @@
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid rgb(19, 51, 110) !important;
+  border-top: 4px solid rgb(23, 32, 42) !important;
   bottom: -4px;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .time {
-  background: rgb(19, 51, 110) !important;
+  background: rgb(23, 32, 42) !important;
   display: inline-block;
   padding: 8px;
 }

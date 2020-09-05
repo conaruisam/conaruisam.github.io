@@ -19,13 +19,13 @@ html {
 
 #main-nav.scrolled, #main-nav.buttonaso  {
     transition: 1s ease;
-    background: rgb(19, 51, 110) !important;
+    background: rgb(23, 32, 42) !important;
 }
 
 #main-nav .act .active{
     opacity: 1;
     color: white;
-    background: rgba(0, 39, 110, 1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .nav_isam {
@@ -343,9 +343,6 @@ nav ul li a:hover{
     margin: auto;
 }
 
-/* .contenedor-imagen:hover {
-    opacity: 0.8;
-} */
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
@@ -368,17 +365,3 @@ footer .row {
     padding: 10px;  
     color: white;
 }
-
-/* MODAL STYLES */
-
-
-/* .modal-dialog {
-	margin: 0px auto;
-	height: 100%;
-	max-width: 1000px;
-}
-
-.modal-content {
-	width: auto;
-}
- */
