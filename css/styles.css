@@ -213,7 +213,7 @@ nav ul li a:hover{
 	}
 }
 
-.icon-coffee:hover:before {
+.icon-coffee-1:hover:before {
 	-webkit-animation: toBottomFromTop 0.6s forwards;
 	-moz-animation: toBottomFromTop 0.6s forwards;
 	animation: toBottomFromTop 0.6s forwards;
