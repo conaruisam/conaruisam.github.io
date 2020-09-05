@@ -1,6 +1,8 @@
 
 .icon-plus:before { content: '\e800'; } /* '' */
 .icon-eq-outline:before { content: '\e801'; } /* '' */
-.icon-coffee:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-emo-coffee:before { content: '\e808'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-coffee-1:before { content: '\f0f4'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
