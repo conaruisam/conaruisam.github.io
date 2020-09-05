@@ -322,7 +322,7 @@ nav ul li a:hover{
     color: white;    
     text-shadow: #474747 3px 5px 2px;
     font-family: 'Segoe UI';
-    font-size: 55px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -334,7 +334,7 @@ nav ul li a:hover{
 }
 
 .p_aboutme {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .imgtimeline {
@@ -342,6 +342,18 @@ nav ul li a:hover{
     align-items: center;
     margin: auto;
 }
+
+.contenedor-imagen:hover {
+    opacity: 0.8;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
 
 /* 
 *********************************** 
@@ -353,3 +365,15 @@ footer .row {
     color: white;
 }
 
+/* MODAL STYLES */
+
+
+.modal-dialog {
+	margin: 0px auto;
+	height: 100%;
+	max-width: 1000px;
+}
+
+.modal-content {
+	width: auto;
+}

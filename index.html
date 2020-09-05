@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,8 @@
     <meta name="keywords" content="Programador, Desarrollador, Programmer, Developer, Autodidacta,">
     <title>Isam Zahriou Berrak</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">    
-    <link rel="stylesheet" href="css/timeline.css">    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/fontello.css">
     <!-- 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
@@ -23,339 +24,528 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177214124-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-177214124-1');
+        gtag('config', 'UA-177214124-1');
     </script>
+    <script src="js/scripts.js"></script>
 
 </head>
+
 <body data-spy="scroll" data-target="#main-nav">
-    <div class="container-fluid">  
-    <!-- HEADER -->
-    <header>
-        <div class="row">                
-            <!-- MENU DE NAVEGACIÓN -->
-            <div class="col-12 p-0">
-                <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
-                    <span class="nav_isam navbar-brand">ISAM ZAHRIOU</span>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav" aria-controls="menunav" aria-expanded="false" onclick="cambiarClase(this)">
-                        <span class="icon-menu" style="font-size: 23px; color: white;"></span>
-                    </button>  
-                    <div class="navbar-collapse col-auto collapse" id="menunav">
-                        <ul class="navbar-nav flex-row ml-md-auto d-block d-lg-flex p-0">
-                            <li class="nav-item">
-                                <a href="#inicio" class="nav-item nav-link">Inicio</a>
-                            </li>
-                            <li class="nav-item act">
-                                <a href="#aboutme" class="nav-item nav-link ">Sobre mí</a>
-                            </li>
-                            <li class="nav-item act">
-                                <a href="#timeline" class="nav-item nav-link ">Trayectoria</a>
-                            </li>
-                            <li class="nav-item act">
-                                <a href="#knowledge" class="nav-item nav-link ">Conocimientos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-item nav-link">CV</a>
-                            </li>
-                        </ul>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header>
+            <div class="row">
+                <!-- MENU DE NAVEGACIÓN -->
+                <div class="col-12 p-0">
+                    <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
+                        <span class="nav_isam navbar-brand">ISAM ZAHRIOU</span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
+                            aria-controls="menunav" aria-expanded="false" onclick="cambiarClase(this)">
+                            <span class="icon-menu" style="font-size: 23px; color: white;"></span>
+                        </button>
+                        <div class="navbar-collapse col-auto collapse" id="menunav">
+                            <ul class="navbar-nav flex-row ml-md-auto d-block d-lg-flex p-0">
+                                <li class="nav-item">
+                                    <a href="#inicio" class="nav-item nav-link">Inicio</a>
+                                </li>
+                                <li class="nav-item act">
+                                    <a href="#aboutme" class="nav-item nav-link ">Sobre mí</a>
+                                </li>
+                                <li class="nav-item act">
+                                    <a href="#timeline" class="nav-item nav-link ">Trayectoria</a>
+                                </li>
+                                <li class="nav-item act">
+                                    <a href="#knowledge" class="nav-item nav-link ">Conocimiento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-item nav-link">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <!-- Home -->
+            <div class="row" id="inicio">
+                <div class="col columnsmain text-center" style="margin-top: 300px">
+                    <p class="iconosinicio">
+                        <span class="icon-laptop"></span>
+                        <span class="icon-plus"></span>
+                        <span class="icon-coffee"></span>
+                        <span class="icon-eq-outline"></span>
+                    </p>
+
+                    <span class="encabezado_isam d-none d-md-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
+                    <span class="encabezado_isam_mobile d-md-none d-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
+
+                    <div id="typed-strings">
+                        <p>Desarrollador de software</p>
+                        <!-- <p>Full-stack developer</p> -->
+                        <p>Persona autodidacta</p>
+                        <p>Capaz de resolver problemas</p>
+                        <p>Proactivo</p>
+                        <p></p>
                     </div>
-                </nav>  
-            </div>
-        </div>       
-    </header>
 
-    <!-- MAIN -->
-    <main>
-        <div class="row" id="inicio">
-            <div class="col columnsmain text-center" style="margin-top: 300px">
-                <p class="iconosinicio">
-                    <span class="icon-laptop"></span>
-                    <span class="icon-plus"></span>
-                    <span class="icon-coffee"></span>
-                    <span class="icon-eq-outline"></span>                    
-                </p>
-
-                <span class="encabezado_isam d-none d-md-block" data-aos="fade-left">Isam Zahriou Berrak</span> 
-                <span class="encabezado_isam_mobile d-md-none d-block" data-aos="fade-right">Isam Zahriou Berrak</span>
-                
-                <div id="typed-strings">
-                    <p>Desarrollador de software</p>
-                    <!-- <p>Full-stack developer</p> -->
-                    <p>Persona autodidacta</p>
-                    <p>Capaz de resolver problemas</p>
-                    <p>Proactivo</p>
-                    <p></p>
+                    <span id="typed" class="nav_isam" data-aos="fade-down"></span>
                 </div>
-                
-                <span id="typed" class="nav_isam" data-aos="fade-down"></span>
             </div>
-        </div>
-        
-        <div class="row" id="aboutme">
-            <div class="col columnsmain aboutme">
-                <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
-                <div class="p_aboutme">
-                    <p data-aos="flip-up">
-                        ¡Hola, mundo!
-                    </p>
-                    <p data-aos="flip-down">
-                        Desde muy pequeño siempre me han gustado los ordenadores y <span class="font-italic">cacharrear</span> con ellos.<br>
-                        Desde que tuve un ordenador siempre han formado parte de mi vida, ya sea por aprendizaje, hobby o trabajo.
-                    </p>
-                    <p data-aos="flip-down">
-                        Al terminar la E.S.O. decidí cursar un CFGM de Sistemas Microinformáticos y Redes (SMR), yo sabía que me gustaba la informática pero no sabía que campo dedicarme en concreto. <br>
-                        Al finalizarlo descubrí mi pasión, la <span class="font-weight-bold">programación</span>.
-                    </p>                      
-                    <p data-aos="flip-down">
-                        Si una palabra me definiera sería autodidacta.
-                    </p>                
+            
+            <!-- About me -->
+            <div class="row" id="aboutme">
+                <div class="col columnsmain aboutme">
+                    <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
+                    <div class="p_aboutme">
+                        <p data-aos="fade-up">
+                            ¡Hola, mundo!
+                        </p>
+                        <p data-aos="fade-up">
+                            Desde muy pequeño siempre me han gustado los ordenadores y <span
+                                class="font-italic">cacharrear</span> con ellos.<br>
+                            Desde que tuve un ordenador siempre han formado parte de mi vida, ya sea por aprendizaje,
+                            hobby o trabajo.
+                        </p>
+                        <p data-aos="fade-up">
+                            Al terminar la E.S.O. decidí cursar un CFGM de Sistemas Microinformáticos y Redes (SMR), yo
+                            sabía que me gustaba la informática pero no sabía que campo dedicarme en concreto. <br>
+                            Al finalizarlo descubrí que lo que más me gustaba era la <span
+                                class="font-weight-bold">programación</span>.
+                        </p>
+
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-        
-        <!-- TIMELINE -->
-        <div class="row" id="timeline">
-            <div class="col columnsmain">
-                <div id="headertimeline">
-                    <h1>Mi trayectoria</h1>
-                </div>
-                <ul class="timeline">
-                    <!-- Item 1 -->
-                    <li class="">
-                      <div class="direction-r">
-                        <div class="flag-wrapper">
-                          <span class="hexa"></span>
-                          <span class="flag" data-aos="zoom-out">Nacimiento.</span>
-                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul 1999</span></span>
-                        </div>
-                        <div class="desc" data-aos="fade-down">
-                            Nací en Madrid, el 30 de julio de 1999. <br>
-                            <script>                                
-                                document.write("Tengo "+getEdad("1999/07/30 11:30:00")+" años")
-                            </script>                            
-                        </div>
-                      </div>
-                    </li>
-                  
-                    <!-- Item 2 -->
-                    <li>
-                      <div class="direction-l">
-                        <div class="flag-wrapper">
-                          <span class="hexa"></span>
-                          <span class="flag" data-aos="zoom-in">Mi primer ordenador</span>
-                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Feb 2007</span></span>
-                        </div>
-                        <div class="desc" data-aos="fade-left">
-                            Mis padres por esta época decidieron emprender y necesitaban un ordenador para llevar las finanzas de su negocio etc.
-                            Éste ordenador lo utlizaba yo siempre que ellos no estaban con él.
-                        </div>
-                      </div>
-                    </li>
-                  
-                    <!-- Item 3 -->
-                    <li>
-                      <div class="direction-r">
-                        <div class="flag-wrapper">
-                          <span class="hexa"></span>
-                          <span class="flag" data-aos="zoom-in">PRE-ESO</span>
-                          <span class="time-wrapper" data-aos="fade-right"><span class="time">2007 - 2016</span></span>
-                        </div>
-                        <div class="desc" data-aos="fade-down">
-                            Toda esta étapa aprendí como funcionaban las piezas de un ordenador, como montarlos y realizarles un mantenimiento correcto. <br>
-                            Arreglé y monté equipos de otros amigos y conocidos
-                        </div>
-                      </div>
-                    </li>
 
-                    <!-- Item 4 -->
-                    <li>
-                      <div class="direction-l">
-                        <div class="flag-wrapper">
-                          <span class="hexa"></span>
-                          <span class="flag" data-aos="zoom-in">Educación Secundaria</span>
-                          <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul 2016</span></span>
-                        </div>
-                        <div class="desc" data-aos="fade-down">
-                            Finalicé la ESO, en la que aprendí un montón de cosas pero sobretodo de ciertos profesores aprendí que hay que ser constante y disciplinado, sobretodo si hay algo que te gusta y quieres llegar alto.
-                        </div>
-                      </div>
-                    </li>
-
-                    <!-- Item 5 -->
-                    <li>
-                        <div class="direction-r">
-                          <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag" data-aos="zoom-in">SMR</span>
-                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Sept 2016</span></span>
-                          </div>
-                          <div class="desc" data-aos="fade-left">
-                            Absorbí nuevos conocimientos, de redes, los protocolos, como funcionan las IPs etc. <br>
-                            <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank">Este</a> documento es un trabajo de lo que aprendí (Lo hice para DAM).                            
-                            En sistemas aprendí a crear maquinas virtuales, sistemas de archivos... etc. <br>
-                            Pero lo que más me atrajo fue aplicaciones web, en la que aprendí las bases del desarrollo web front-end. <br>
-                            <div>
-                                <img src="img/logos/dwicons.png" width="200" height="150" class="imgtimeline"><br>
+            <!-- Timeline -->
+            <div class="row" id="timeline">
+                <div class="col columnsmain">
+                    <div id="headertimeline">
+                        <h1>Mi trayectoria</h1>
+                    </div>
+                    <ul class="timeline">
+                        <!-- Item 1 -->
+                        <li class="">
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-out">Nacimiento.</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul
+                                            1999</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-down">
+                                    Nací en Madrid, el 30 de julio de 1999. <br>
+                                    <script>
+                                        document.write("Tengo " + getEdad("1999/07/30 11:30:00") + " años")
+                                    </script>
+                                </div>
                             </div>
-                            También saqué la titulación de CCNA1.
-                          </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <!-- Item 6 -->
-                    <li>
-                        <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag" data-aos="zoom-in">Prácticas NIMBEO</span>
-                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Sep 2017</span></span>
-                        </div>
-                        <div class="desc" data-aos="fade-down" >
-                            Al elegir el CFGM, escogí la modalidad de FCT ampliada y estuve 9 meses de prácticas en NIMBEO, una empresa de desarrollo de Software.
-                            En la cual reforcé mis conocimientos de desarrollo web y aprendí AngularJS y JQuery.
-                            Todo ello de forma autodidacta haciendo los cursos en <br>
-                            <div>
-                                <a href="https://www.w3schools.com/" target="_blank"><img src="img/logos/W3Schools_logo.png" alt="" width="100" height="100" class="imgtimeline"></a>
-                            </div> <br>
-                            Sobretodo aprendí lo importante que es en esta industria formarte constantemente, y a mí personalmente me gusta de forma autodidacta.
-                        </div>
-                        </div>
-                    </li>
+                        <!-- Item 2 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">Mi primer ordenador</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Feb
+                                            2007</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-left">
+                                    Mis padres por esta época decidieron emprender y necesitaban un ordenador para
+                                    llevar las finanzas de su negocio etc.
+                                    Éste ordenador lo utlizaba yo siempre que ellos no estaban con él.
+                                </div>
+                            </div>
+                        </li>
 
-                    <!-- Item 7 -->
-                    <li>
-                        <div class="direction-r">
-                          <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag" data-aos="zoom-in">Programador COBOL Indra</span>
-                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Ago 2018</span></span>
-                          </div>
-                          <div class="desc" data-aos="fade-left">
-                            El mes de agosto realicé un curso presencial intensivo de 3 semanas, en él aprendí SQL, COBOL 
-                            y reforcé mis conocimientos de Linux, posteriormente entré a un proyecto de banca en Indra de COBOL sobre UNIX. <br>
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">PRE-ESO</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">2007 -
+                                            2016</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-down">
+                                    Toda esta étapa aprendí como funcionaban las piezas de un ordenador, como montarlos
+                                    y realizarles un mantenimiento correcto. <br>
+                                    Arreglé y monté equipos de otros amigos y conocidos
+                                </div>
+                            </div>
+                        </li>
 
-                            El cual estuve 1 año y 3 meses, los cuales estoy muy agradecido de todo lo que he aprendido tanto técnicamente hablando como funcionalmente.
-                            
-                            Aprendí sobretodo de contabilidad financiera, 
-                          </div>
-                        </div>
-                    </li>
+                        <!-- Item 4 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">Educación Secundaria</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Jul
+                                            2016</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-down">
+                                    Finalicé la ESO, en la que aprendí un montón de cosas pero sobretodo de ciertos
+                                    profesores aprendí que hay que ser constante y disciplinado, sobretodo si hay algo
+                                    que te gusta y quieres llegar alto.
+                                </div>
+                            </div>
+                        </li>
 
-                    <!-- Item 8 -->
-                    <li>
-                        <div class="direction-l">
-                          <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag" data-aos="zoom-in">COBOL Migración</span>
-                            <span class="time-wrapper" data-aos="fade-right"><span class="time">Nov 2019</span></span>
-                          </div>
-                          <div class="desc" data-aos="fade-left">
-                              En noviembre de 2019 participé en una migración de Caixa Geral a ABANCA. <br>
-                              Mi tarea principal era servir de apoyo a la gente de CAIXA GERAL revisando las dudas por parte de abanca, analizando como los procesos trataban a los datos etc. <br>
-                              En este trabajo utilicé z/OS Mainframe, y aprendí JCL y CICS.
-                          </div>
-                        </div>
-                    </li>                    
-                </ul>  
+                        <!-- Item 5 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">SMR</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Sept
+                                            2016</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-left">
+                                    Absorbí nuevos conocimientos, de redes, los protocolos, como funcionan las IPs etc.
+                                    <br>
+                                    <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank">Este</a> documento es un
+                                    trabajo de lo que aprendí (Lo hice para DAM).
+                                    En sistemas aprendí a crear maquinas virtuales, sistemas de archivos... etc. <br>
+                                    Pero lo que más me atrajo fue aplicaciones web, en la que aprendí las bases del
+                                    desarrollo web front-end. <br>
+                                    <div>
+                                        <img src="img/logos/dwicons.png" width="200" height="150"
+                                            class="imgtimeline"><br>
+                                    </div>
+                                    También saqué la titulación de CCNA1.
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 6 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">Prácticas NIMBEO</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Sep
+                                            2017</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-down">
+                                    Al elegir el CFGM, escogí la modalidad de FCT ampliada y estuve 9 meses de prácticas
+                                    en NIMBEO, una empresa de desarrollo de Software.
+                                    En la cual reforcé mis conocimientos de desarrollo web y aprendí AngularJS y JQuery.
+                                    Todo ello de forma autodidacta haciendo los cursos en <br>
+                                    <div>
+                                        <a href="https://www.w3schools.com/" target="_blank"><img
+                                                src="img/logos/W3Schools_logo.png" alt="" width="100" height="100"
+                                                class="imgtimeline"></a>
+                                    </div> <br>
+                                    Sobretodo aprendí lo importante que es en esta industria formarte constantemente, y
+                                    a mí personalmente me gusta de forma autodidacta.
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 7 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">Programador COBOL Indra</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Ago
+                                            2018</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-left">
+                                    El mes de agosto realicé un curso presencial intensivo de 3 semanas, en él aprendí
+                                    SQL, COBOL
+                                    y reforcé mis conocimientos de Linux, posteriormente entré a un proyecto de banca en
+                                    Indra de COBOL sobre UNIX. <br>
+
+                                    El cual estuve 1 año y 3 meses, los cuales estoy muy agradecido de todo lo que he
+                                    aprendido tanto técnicamente hablando como funcionalmente.
+
+                                    Aprendí sobretodo de contabilidad financiera,
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 8 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">COBOL Migración</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Nov
+                                            2019</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-left">
+                                    En noviembre de 2019 participé en una migración de Caixa Geral a ABANCA. <br>
+                                    Mi tarea principal era servir de apoyo a la gente de CAIXA GERAL revisando las dudas
+                                    por parte de abanca, analizando como los procesos trataban a los datos etc. <br>
+                                    En este trabajo utilicé z/OS Mainframe, y aprendí JCL y CICS. <br>
+                                    <a
+                                        href="https://www.lavozdegalicia.es/noticia/economia/2020/03/17/abanca-finaliza-integracion-banco-caixa-geral/0003_202003G17P38995.htm">
+                                        Dejo un artículo que habla sobre la finalización de la integración.
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 9 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">CFGS DAM</span>
+                                    <span class="time-wrapper" data-aos="fade-right"><span class="time">Sep
+                                            2019</span></span>
+                                </div>
+                                <div class="desc" data-aos="fade-left">
+                                    Mientras estaba trabajando decidí cursar el ciclo formativo de desarrollo de
+                                    aplicaciones multiplataforma, que sigo cursando actualmente.
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="row mb-5" id="knowledge"  data-aos="flip-down">
-            <div class="col">
-                <h2 class="text-center">Conocimientos</h2>               
+            <!-- Knowledge -->
+            <div class="row mb-5" id="knowledge" data-aos="fade-up">
+                <div class="col">
+                    <div class="container">
+                        <h2 class="text-center">Conocimientos</h2>
+                        <div class="row mt-3">
+                            <div class="col-md-3">
+                                <div class="list-group" id="lista" role="tablist">
+                                    <a href="#cobol" class="list-group-item list-group-item-action" data-toggle="list"
+                                        role="tab" arial-controls="cobol">
+                                        <span>COBOL</span>
+                                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 90%;">90%</div><br>
+                                        </div>
+                                    </a>
+                                    <a href="#sql" class="list-group-item list-group-item-action" data-toggle="list"
+                                        role="tab" arial-controls="sql">
+                                        <span>SQL</span>
+                                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 80%;">80%</div><br>
+                                        </div>
+                                    </a>
+                                    <a href="#java" class="list-group-item list-group-item-action" data-toggle="list"
+                                        role="tab" arial-controls="java">
+                                        <span>Java</span>
+                                        <div class="progress" style="background-color:rgb(189, 189, 189)">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 70%;">70%</div><br>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="tab-content" id="nav-tabContent">
 
-                <div class="row">
-                    <div class="col">
-                        <div class="container">
-                            <div class="row mt-3">
-                                <div class="col-3">
-                                    <div class="list-group" id="lista" role="tablist">
-                                        <a href="#cobol" class="list-group-item list-group-item-action" data-toggle="list" role="tab" arial-controls="cobol">
-                                            <span>COBOL</span>
-                                            <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;">90%</div><br>
-                                            </div>                    
-                                        </a>
-                                        <a href="#elemento2" class="list-group-item list-group-item-action" data-toggle="list" role="tab" arial-controls="elemento2">Elemento 2</a>
-                                        <a href="#elemento3" class="list-group-item list-group-item-action" data-toggle="list" role="tab" arial-controls="elemento3">Elemento 3</a>
+                                    <div class="tab-pane fade show" id="cobol" role="tabpanel" aria-labelledby="cobol">
+                                        <div class="text-center">
+                                            <img src="img/logos/cobol.png" alt="" width="200" height="200">
+                                        </div>
+                                        <hr>
+                                        <p>
+                                            COBOL lo conocí después de terminar el ciclo formativo de grado medio,
+                                            sinceramente quería hacer un grado superior pero no tenía dinero y tuve que
+                                            trabajar,
+                                            sabía que lo que me gustaba era la programación, pero no encontré ninguna
+                                            oferta sin experiencia excepto en COBOL, un lenguaje que no sabía ni que
+                                            existía y es el que más me <span class="font-italic"> ha dado de
+                                                comer</span>. <br>
+                                            Sé como funcionan las transacciones COBOL, rútinas y batch. También sé como
+                                            funcionan los JOBs en Linux y los JCL en MAINFRAME.
+                                            <hr>
+                                            Es el lenguaje que probablemente más tiempo le he dedicado y mi mente se
+                                            estructuró mucho para programar en COBOL, ya no tanto por que he ido
+                                            dedicandole tiempo a más lenguajes.
+                                            Ahora mismo no tengo ningún proyecto personal en COBOL, por razones lógicas.
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-pane fade show" id="sql" role="tabpanel" aria-labelledby="sql">
+                                        <div class="text-center">
+                                            <img src="img/logos/sql.png" alt="" width="200" height="200">
+                                        </div>
+                                        <hr>
+                                        <p>
+                                            SQL, es otro de mis puntos fuertes, no he parado de utilizarlo, y con bases
+                                            de datos gigantescas.
+                                            Tanto para crear tablas y relacionarlas como consultarlas... etc. <br>
+
+                                            También sé realizar scripts con PL/SQL.
+                                            Las bases de datos que he utilizado han sido ORACLE y DB2, también algo de
+                                            MySQL. <br>
+                                            No tengo ningún problema en conocer y aprender algo nuevo relacionado con
+                                            las bases de datos como las bbdd no relacionales etc.
+                                        </p>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="contenedor-imagen">
+                                                    <a href="#" data-toggle="modal" data-target="#modal">
+                                                        <figure class="figure">
+                                                            <img class="img-fluid rounded" src="img/sqldeveloper.png" alt="">
+                                                            <figcaption class="figure-caption">
+                                                                <p class="text-center">Oracle - SQLDeveloper</p>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="contenedor-imagen">                                                    
+                                                    <a href="#" data-toggle="modal" data-target="#modal">
+                                                        <figure class="figure">
+                                                            <img class="img-fluid rounded" src="img/spufi.jpg" alt=""
+                                                                width="500" height="500">
+                                                            <figcaption class="figure-caption">
+                                                                <p class="text-center">DB2 - SPUFI.</p>
+                                                            </figcaption>
+                                                        </figure>                                                    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade show active" id="java" role="tabpanel" aria-labelledby="java">
+                                        <div class="text-center">
+                                            <img src="img/logos/java.png" alt="" width="200" height="200">
+                                        </div>
+                                        <p class="mt-2">
+                                            Donde más he aprendido Java es en el grado superior, y también me he
+                                            estructurado la mente para poder trabajar con un lenguaje orientado a
+                                            objetos. <br>
+
+                                            Tengo un pequeño proyecto utilizando la librería de JFrame, utilizando IntelliJ IDEA, xamp
+
+                                            Dejo un par de fotos del proyecto y el enlace de todo el código en mi <a href="https://github.com/conaruisam/Concesionario_Interface-CRUD" > github</a>
+                                            <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#secondary-carousel" data-slide-to="0" class=""></li>
+                                                    <li data-target="#secondary-carousel" data-slide-to="1" class="active"></li>
+                                                    <li data-target="#secondary-carousel" data-slide-to="2"></li>
+                                                </ol>
+                            
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item">
+<!-- 
+                                                        <div class="carousel-caption d-block">
+                                                            <h1>Isam</h1>
+                                                            <p>Software developer.</p>
+                                                        </div>
+ -->
+                                                        <img src="img/java.png" alt="" width="900" height="300">
+                                                    </div>
+                                                    <div class="carousel-item active">
+                                                        <img src="img/alta_coche.png" alt="" width="900" height="300">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/xampp.png" alt="" width="900" height="300">
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <!-- BOTONES PARA ADELANTAR LA FOTO O RETRODECER. -->
+                                                <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev" style="color: black !important">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                                    <span class="sr-only" >Anterior</span>
+                                                </a>
+                                                <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="contenedor-imagen mt-3">
+                                                <div class="card" >
+                                                    <a href="#" data-toggle="modal" data-target="#modal">
+                                                        <img src="img/curso-java.jpg" class="img-fluid imagen" alt="">
+                                                    </a>
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Curso java Udemy</h4> <hr>
+                                                        <h6 class="card-subtitle">
+                                                            También dediqué bastantes horas a este curso de udemy el cual me ayudó mucho <br>
+                                                            <a href="https://www.udemy.com/course/aprende-programacion-en-java-desde-cero/">Enlace al curso</a>.
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-9">
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="cobol" role="tabpanel" aria-labelledby="cobol">
-                                            <img src="img/logos/cobol.png" alt="">
-                                            <p>
-                                                COBOL lo conocí después de terminar el ciclo formativo de grado medio, sinceramente quería hacer un grado superior pero no tenía dinero y tuve que trabajar,
-                                                sabía que lo que me gustaba era la programación, pero no encontré ninguna oferta sin experiencia excepto en COBOL, un lenguaje que no sabía ni que existía y es el que más me <span class="font-italic">  ha dado de comer</span>. <br>
-                                                Me formaron tres semanas de forma intensiva, y empecé a trabajar
-
-                                                <hr>
-                                                Es el lenguaje que probablemente más tiempo le he dedicado y mi mente se estructuró mucho para programar en COBOL, ya no tanto por que he ido dedicandole tiempo a más lenguajes.
-                                                Ahora mismo no tengo ningún proyecto personal en COBOL, por razones lógicas.
-                                            </p>
-                                        </div>                    
-                                        <div class="tab-pane fade show" id="elemento2" role="tabpanel" aria-labelledby="elemento2">
-                                            <h1>Titulo #2</h1>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt placeat sapiente doloribus voluptatibus quis deleniti, animi cumque obcaecati dolorum tenetur.</p>
-                                        </div>  
-                                    
-                                        <div class="tab-pane fade show" id="elemento3" role="tabpanel" aria-labelledby="elemento3">
-                                            <h1>Titulo #3</h1>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt placeat sapiente doloribus voluptatibus quis deleniti, animi cumque obcaecati dolorum tenetur.</p>
-                                        </div>                    
-                                    </div>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
-                    
                     </div>
                 </div>
-            </div>            
-        </div>
-    </main>
+            </div>
+        </main>
 
-    <!-- FOOTER -->
-    <footer class="expand">
-        <div class="row justify-content-center" style="background-color: #141417;">
-            <div class="col-12">
-                <h1 class="text-center">Contacto</h1>             
+        
+        <!-- FOOTER -->
+        <footer class="expand">
+            <div class="row justify-content-center" style="background-color: #141417;">
+                <div class="col-12">
+                    <h1 class="text-center">Contacto</h1>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Ventana Modal -->
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog d-flex justify-content-center align-items-center">
+            <div class="modal-content">
+                <img src="img/img-1.jpg" alt="" id="imagen-modal" class="">
             </div>
         </div>
-    </footer>
-       
-    </div>  
+    </div>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
     <!-- Script para que se repitan las letras en el encabezado. -->
     <script>
-        $('document').ready(function() {
-            var typed = new Typed('#typed',{
-                    stringsElement: '#typed-strings',
-                    backSpeed: 50,
-                    typeSpeed: 120,
-                    loop: true
-                    /* shuffle: true */
-                  });
+        $('document').ready(function () {
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                backSpeed: 50,
+                typeSpeed: 120,
+                loop: true
+                /* shuffle: true */
+            });
         });
     </script>
     <!-- Para cambiar la transparencia del menú -->
     <script>
 
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 790);
         });
-        
-        function cambiarClase(comp){
-            
+
+        function cambiarClase(comp) {
             $('nav').toggleClass('buttonaso');
-     
         }
+
+
     </script>
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -363,11 +553,12 @@
         AOS.init({
             offset: 120,
             once: true,
-	        delay: 500,
-	        duration: 1000,
-	        easing: 'ease'
+            delay: 500,
+            duration: 1000,
+            easing: 'ease'
         });
     </script>
 
 </body>
+
 </html>
