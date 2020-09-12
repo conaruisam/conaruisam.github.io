@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+.row {
+    overflow: hidden;
+}
   
 .container-fluid {
     background-color: rgba(224, 224, 224, 0.7);
@@ -363,4 +367,10 @@ footer {
 footer .row {
     padding: 10px;  
     color: white;
+}
+
+@media (max-width: 767px) {
+    .footer-copyright {
+        font-size: 14px;
+    }
 }
