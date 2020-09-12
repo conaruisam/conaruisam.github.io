@@ -1,11 +1,10 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
-
 .row {
+
     overflow: hidden;
 }
-  
 .container-fluid {
     background-color: rgba(224, 224, 224, 0.7);
     font-family: 'Raleway', sans-serif;
@@ -365,6 +364,8 @@ footer {
 }
 
 footer .row {
+    
+    
     padding: 10px;  
     color: white;
 }

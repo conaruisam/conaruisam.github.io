@@ -24,3 +24,8 @@ function getEdad(dateString) {
 		$('#modal').modal('hide');
 	});
 })
+
+
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
