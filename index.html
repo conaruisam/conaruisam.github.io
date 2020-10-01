@@ -51,7 +51,7 @@
                     <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
                         <span class="nav_isam navbar-brand">ISAM ZAHRIOU</span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
-                            aria-controls="menunav" aria-expanded="false" onclick="cambiarClase(this)">
+                            aria-controls="menunav" aria-expanded="false" >
                             <span class="icon-menu" style="font-size: 23px; color: white;"></span>
                         </button>
                         <div class="navbar-collapse col-auto collapse" id="menunav">
@@ -60,16 +60,16 @@
                                     <a href="#inicio" class="nav-item nav-link">Inicio</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#aboutme" class="nav-item nav-link ">Sobre mí</a>
+                                    <a href="#aboutme" class="nav-item nav-link " onclick="cambiarClase(this)">Sobre mí</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#timeline" class="nav-item nav-link ">Trayectoria</a>
+                                    <a href="#timeline" class="nav-item nav-link " onclick="cambiarClase(this)">Trayectoria</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#knowledge" class="nav-item nav-link ">Conocimiento</a>
+                                    <a href="#knowledge" class="nav-item nav-link " onclick="cambiarClase(this)">Conocimiento</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-item nav-link">CV</a>
+                                    <a href="./img/PDFs/CV Isam Zahriou Berrak.pdf" class="nav-item nav-link" target="_blank">CV</a>
                                 </li>
                             </ul>
                         </div>
@@ -602,18 +602,7 @@
             </div>
         </footer>
     </div>
-
-    <!-- Ventana Modal -->
-    <!--
-        <div class="modal fade" id="modal">
-            <div class="modal-dialog d-flex justify-content-center align-items-center">
-                <div class="modal-content">
-                    <img src="img/img-1.jpg" alt="" id="imagen-modal" class="">
-                </div>
-            </div>
-        </div>
-    -->
- 
+     
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -638,9 +627,9 @@
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 790);
         });
 
-        function cambiarClase(comp) {
+/*         function cambiarClase(comp) {
             $('nav').toggleClass('buttonaso');
-        }
+        } */
 
 
     </script>
