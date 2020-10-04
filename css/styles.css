@@ -92,31 +92,22 @@ nav ul li a:hover{
 /* PARA LA IMAGEN DE LA CABECERA, DEPENDIENDO SI ES MOVIL O ALGO MÁS GRANDE. */
 @media (min-width: 767px) {
     #inicio {        
-      background-image: url(../img/cabecera.png);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;    
+      background: url("../img/cabecera.png");
+      background-size: cover;
     }
   }
 
 @media only screen and (max-width: 959px) {
     #inicio:before {
-    content: "";
-    background-image: url(../img/cabecera_movil.png);
+    background: url("../img/cabecera_movil.png");
     background-size: cover;
     }
 }
 
 @media (max-width: 767px) {
-    #inicio {
-    background-image: url("../img/cabecera_movil.jpg");  
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+    #inicio {        
+        background: url("../img/cabecera_movil.png");
+        background-size: cover;
     }
   }
 
