@@ -49,7 +49,7 @@
                 <!-- MENU DE NAVEGACIÓN -->
                 <div class="col-12 p-0">
                     <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
-                        <span class="nav_isam navbar-brand">ISAM ZAHRIOU</span>
+                        <span class="nav_isam navbar-brand"><a href="#inicio" style="text-decoration: none; color: white;">ISAM ZAHRIOU</a></span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
                             aria-controls="menunav" aria-expanded="false" >
                             <span class="icon-menu" style="font-size: 23px; color: white;"></span>
@@ -110,7 +110,10 @@
             
             <!-- About me -->
             <div class="row" id="aboutme">
-                <div class="col columnsmain aboutme">
+                    
+                <img src="./img/me.jpg" alt="" class="col-md-6 foto_aboutme" data-aos="flip-up">
+
+                <div class="col-md-6 columnsmain aboutme">
                     <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
                     <div class="p_aboutme">
                         <p data-aos="fade-up">
@@ -130,8 +133,8 @@
                         </p>
 
                     </div>
-
                 </div>
+
             </div>
 
             <!-- Timeline -->
@@ -629,10 +632,10 @@
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 740);
         });
 
-        function cambiarClase(comp) {
+/*         function cambiarClase(comp) {
             $('nav').toggleClass('buttonaso');
         }   
-
+ */
 
     </script>
     <!-- AOS Library -->

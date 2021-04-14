@@ -85,7 +85,7 @@ nav ul li a:hover{
 ***********************************
 */
 
-.columnsmain {
+.columnsmain, .foto_aboutme {
     margin-top: 70px;
 }
 
@@ -311,6 +311,7 @@ nav ul li a:hover{
 		transform: rotate(0deg);
 	}
 }
+
 .encabezado_isam {    
     color: white;    
     text-shadow: #474747 3px 5px 2px;
@@ -324,6 +325,9 @@ nav ul li a:hover{
     text-shadow: #474747 3px 5px 2px;
     font-size: 25px;
     font-weight: bold;
+}
+
+.foto_aboutme {
 }
 
 .p_aboutme {
