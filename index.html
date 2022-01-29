@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Isam Zahriou Berrak">
-    <meta name="description" content="Proyecto personal.">
-    <meta name="keywords" content="Programador, Desarrollador, Programmer, Developer, Autodidacta,">
+    <meta name="description" content="Proyecto personal, portfolio personal.">
+    <meta name="keywords" content="Isam, Zahriou, Berrak, Programador, Desarrollador, Programmer, Developer, Autodidacta">
     <title>Isam Zahriou Berrak</title>
     <link rel="shortcut icon" href="img/logos/favicon.png" />
     <link rel="icon" href="img/logos/favicon.png">
@@ -42,7 +42,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav">
-    <div class="container-fluid">
+    <div class="container-fluid">    
+
         <!-- HEADER -->
         <header>
             <div class="row">
@@ -68,11 +69,10 @@
                                 <li class="nav-item act">
                                     <a href="#knowledge" class="nav-item nav-link " onclick="cambiarClase(this)">Conocimiento</a>
                                 </li>
-                                <!-- 
+                                
                                 <li class="nav-item">
-                                    <a href="./img/PDFs/CV Isam Zahriou Berrak.pdf" class="nav-item nav-link" target="_blank">CV</a>
+                                    <a href="#contacto" class="nav-item nav-link"> Contacto </a>
                                 </li>
-                                 -->
                             </ul>
                         </div>
                     </nav>
@@ -99,7 +99,6 @@
                         <p>Desarrollador de software</p>
                         <!-- <p>Full-stack developer</p> -->
                         <p>Persona autodidacta</p>
-                        <p>Capaz de resolver problemas</p>
                         <p>Proactivo</p>
                         <p></p>
                     </div>
@@ -127,9 +126,8 @@
                         </p>
                         <p data-aos="fade-up">
                             Al terminar la E.S.O. decidí cursar un CFGM de Sistemas Microinformáticos y Redes (SMR), yo
-                            sabía que me gustaba la informática pero no sabía que campo dedicarme en concreto. <br>
-                            Al finalizarlo descubrí que lo que más me gustaba era la <span
-                                class="font-weight-bold">programación</span>.
+                            sabía que me gustaba la informática pero no sabía que campo dedicarme en concreto. <br><br>
+                            Al finalizarlo descubrí que lo que más me gustaba era la <span class="font-weight-bold">programación</span>.
                         </p>
 
                     </div>
@@ -320,17 +318,31 @@
                                     Mientras estaba trabajando decidí cursar el ciclo formativo de desarrollo de
                                     aplicaciones multiplataforma, que sigo cursando actualmente. <br>
                                     
-                                    Ya tengo el primer curso aprobado
+                                    Únicamente me falta el TFG.
                                 </div>
                             </div>
                         </li>
 
+                        <!-- Item 10 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" data-aos="zoom-in">Caixabank - Bankia. DXC</span>
+                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Feb
+                                            2021</span></span>
+                                </div>
+                                <div class="desc" data-aos="zoom-in">
+                                    Actualmente en este puesto de trabajo.
+                                </div>
+                            </div>
+                        </li>                        
                     </ul>
                 </div>
             </div>
 
             <!-- Knowledge -->
-            <div class="row mb-5" id="knowledge" data-aos="fade-up"> 
+            <div class="row" id="knowledge" data-aos="fade-up"> 
                 <div class="col">
                     <div class="container">
                         <h2 class="text-center">Conocimientos</h2>
@@ -381,13 +393,18 @@
                                     </a>
 
                                 </div>
+                                <div class="text-center mt-3">
+                                    <p class="text-muted">
+                                        Pulse para más información
+                                    </p>
+                                </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="tab-content" id="nav-tabContent">
 
                                     <div class="tab-pane fade show active" id="default" role="tabpanel" aria-labelledby="default">
                                         <p style="font-size: 20px;">
-                                            Mis conocimientos están en constante crecimiento, soy una persona curiosa; siempre tengo algún proyecto personal en mente o algo que aprender.
+                                            Mis conocimientos están en constante crecimiento; siempre intento tener algún proyecto en mente o algo que aprender.
                                             <hr>
                                             En la el apartado de la progress-bar están más definidos.
                                         </p>
@@ -576,6 +593,42 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Contact -->
+            <div class="form-row mb-5 text-center" id="contacto" data-aos="fade-down">
+                <div class="container">
+                    <form class="form-row" method="POST" action="../cgi-bin/formulario.php">   
+                        <div class="form-group col-md-6">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" name="name" placeholder="Nombre" required>
+                        </div>    
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Apellidos</label>
+                            <input type="text" class="form-control" name="lastname" placeholder="Apellidos">
+                        </div>    
+                        <div class="form-group col-md-6">
+                            <label for="inputMail">E-mail</label>
+                            <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+                        </div>    
+                        <div class="form-group col-md-6">
+                            <label for="subject">Asunto</label>
+                            <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                        </div>    
+                        <div class="form-group col-12">
+                            <label for="textArea">Mensaje</label>
+                            <textarea class="form-control" name="mensaje" rows="4" placeholder="Escriba su mensaje" required></textarea> 
+                        </div>
+
+                        <div class="col-md-6 mt-3">
+                            <input class="btn btn-primary btn-sm btn-block" type="submit" value="Enviar" name="enviar">                            
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <input class="btn btn-secondary btn-sm btn-block" type="reset" value="Reestablecer" name="reestablecer">
+                        </div>                    
+                        
+                    </form>                     
+                </div>
+            </div>
         </main>
 
         
@@ -600,7 +653,7 @@
                 <div class="col-sm-12 col-md-5  text-center text-md-right ">           
                     <!-- Copyright -->
                     <div class="footer-copyright py-3 ">
-                        © 2020 Copyright:
+                        © 2021 Copyright:
                         <span>Isam Zahriou Berrak</span>                        
                     </div>
                 </div>
