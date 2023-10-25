@@ -25,7 +25,7 @@
     -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="js/calcularEdad.js"></script>
+    <script src="js/calcularFechas.js"></script>
     <script src="js/typed.js-master/lib/typed.min.js"></script>
     <!-- GOOGLE ANALYTICS -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -653,7 +653,11 @@
                 <div class="col-sm-12 col-md-5  text-center text-md-right ">           
                     <!-- Copyright -->
                     <div class="footer-copyright py-3 ">
-                        © 2021 Copyright:
+                        
+                        <script>
+                            document.write("© "+getAnio()+" Copyright: ")
+                        </script>
+                        
                         <span>Isam Zahriou Berrak</span>                        
                     </div>
                 </div>

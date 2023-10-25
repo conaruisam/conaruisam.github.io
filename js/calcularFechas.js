@@ -10,4 +10,11 @@ function getEdad(dateString) {
       edad--
     }
     return edad
-  }
+}
+
+function getAnio() {
+    let hoy = new Date()
+    let anio = hoy.getFullYear()
+
+    return anio
+}
