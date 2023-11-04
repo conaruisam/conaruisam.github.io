@@ -95,14 +95,14 @@ nav ul li a:hover{
       background-image: url("../img/cabecera.png");
       background-size: cover;
     }
-  }
+  }/* 
 
 @media only screen and (max-width: 959px) {
     #inicio:before {
     background-image: url("../img/cabecera_movil.png");
     background-size: cover;
     }
-}
+} */
 
 @media (max-width: 767px) {
     #inicio {        
@@ -327,9 +327,6 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-.foto_aboutme {
-}
-
 .p_aboutme {
     font-size: 20px;
 }
@@ -370,5 +367,80 @@ footer .row {
 @media (max-width: 767px) {
     .footer-copyright {
         font-size: 14px;
+    }
+}
+
+
+/** BACKGROUNDS FOR IPHONE **/
+/*============================================================================== 
+    iPhone 4 and 4S || 320 x 480 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 320px) 
+and (max-width: 480px){
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 480px) and (orientation: portrait) {
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 480px) and (orientation: landscape) {
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+/*============================================================================== 
+iPhone 5, 5S, 5C and 5SE || 320 x 568 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 320px) 
+and (max-width: 568px){
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 568px) and (orientation: portrait) {
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 568px) and (orientation: landscape) {
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+/*============================================================================== 
+iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 375px) 
+and (max-width: 667px){
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 667px) and (orientation: portrait) {
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
     }
 }
