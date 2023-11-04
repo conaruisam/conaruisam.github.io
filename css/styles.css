@@ -444,3 +444,64 @@ and (max-width: 667px) and (orientation: portrait) {
         background-size: cover;
     }
 }
+
+
+@media only screen and (min-width: 375px) 
+and (max-width: 667px) and (orientation: landscape) { 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+/*============================================================================== 
+iPhone 6+, 7+ and 8+ || 414 x 736 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 414px) 
+and (max-width: 736px){ 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 414px) 
+and (max-width: 736px) and (orientation: portrait) { 
+    .test-class{display: none !important; visibility: hidden !important;}
+
+}
+
+@media only screen and (min-width: 414px) 
+and (max-width: 736px) and (orientation: landscape) { 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+/*============================================================================== 
+iPhone X || 375 x 812 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 375px) 
+and (max-width: 812px){ 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 812px) and (orientation: portrait) { 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 812px) and (orientation: landscape) { 
+    #inicio {        
+        background-image: url("../img/cabecera_movil.png");
+        background-size: cover;
+    }
+}
