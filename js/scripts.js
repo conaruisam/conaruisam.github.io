@@ -31,20 +31,16 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 // Smooth scroll for in-page anchors (compensate fixed navbar height)
-$(document).on('click', 'a.nav-link[href^="#"], a.navbar-brand[href^="#"]', function(element) {
+$(document).on('click', '#main-nav a[href^="#"], .nav-link[href^="#"], a.navbar-brand[href^="#"]', function(e) {
   var href = $(this).attr('href');
   if (!href || href === '#') return;
   var $target = $(href);
   if ($target.length) {
-    element.preventDefault();
+    e.preventDefault();
     var navHeight = $('#main-nav').outerHeight() || 0;
     var targetY = $target.offset().top - navHeight - 8; // small extra offset
-    // Respect prefers-reduced-motion
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      window.scrollTo(0, targetY);
-    } else {
-      $('html, body').animate({ scrollTop: targetY }, 500);
-    }
+    // Use jQuery animate for consistent smooth scrolling
+    $('html, body').stop().animate({ scrollTop: targetY }, 600);
     // close mobile menu if open
     $('.navbar-collapse').collapse('hide');
   }
