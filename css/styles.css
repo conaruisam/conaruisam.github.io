@@ -45,6 +45,20 @@ html {
    color: white;
 }
 
+/* Active link style (highlight current section) */
+.navbar-nav .nav-link.active {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff !important;
+    opacity: 1;
+    border-radius: 3px;
+}
+
+/* Focus visible for keyboard users */
+.nav-link:focus-visible, .navbar-toggler:focus-visible {
+    outline: 3px solid rgba(255,255,255,0.18);
+    outline-offset: 2px;
+}
+
 /* HOVER BORDE. */
 nav ul li {    
     color: white;
@@ -371,6 +385,16 @@ footer .row {
 @media (max-width: 767px) {
     .footer-copyright {
         font-size: 14px;
+    }
+}
+
+/* Respect users' reduced motion preference: reduce animations/transitions */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
     }
 }
 

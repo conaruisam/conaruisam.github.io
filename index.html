@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Isam Zahriou Berrak">
-    <meta name="description" content="Proyecto personal, portfolio personal.">
+    <meta name="description" content="Portfolio de Isam Zahriou Berrak — desarrollador de software con experiencia en COBOL, Java, SQL y desarrollo web. Proyectos, trayectoria y contacto.">
     <meta name="keywords" content="Isam, Zahriou, Berrak, Programador, Desarrollador, Programmer, Developer, Autodidacta, Software, Engineer">
     <title>Isam Zahriou Berrak</title>
     <link rel="shortcut icon" href="img/logos/favicon.png" />
     <link rel="icon" href="img/logos/favicon.png">
+    <link rel="canonical" href="https://conaruisam.github.io/">
+    <meta name="theme-color" content="#171a1d">
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Isam Zahriou Berrak — Desarrollador de software">
+    <meta property="og:description" content="Portfolio de Isam Zahriou Berrak: experiencia en COBOL, Java, SQL, C++ y desarrollo web. Proyectos y trayectoria profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://conaruisam.github.io/">
+    <meta property="og:image" content="https://conaruisam.github.io/img/me.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/timeline.css">
@@ -48,7 +60,9 @@
                 <!-- MENU DE NAVEGACIÓN -->
                 <div class="col-12 p-0">
                     <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
-                        <span class="nav_isam navbar-brand"><a href="#inicio" style="text-decoration: none; color: white;">ISAM ZAHRIOU</a></span>
+                        <span class="nav_isam navbar-brand">
+                            <a href="#inicio" style="text-decoration: none; color: white;">ISAM ZAHRIOU</a>
+                        </span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
                             aria-controls="menunav" aria-expanded="false" aria-label="Abrir menú">
                             <span class="icon-menu" style="font-size: 23px; color: white;"></span>
@@ -775,13 +789,22 @@
     <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 120,
-            once: true,
-            delay: 500,
-            duration: 1000,
-            easing: 'ease'
-        });
+        // Initialize AOS with reduced defaults; respect users' reduced-motion preference
+        (function(){
+            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if(prefersReduced) {
+                // disable AOS animations
+                AOS.init({ disable: true });
+            } else {
+                AOS.init({
+                    offset: 120,
+                    once: true,
+                    delay: 120,
+                    duration: 700,
+                    easing: 'ease'
+                });
+            }
+        })();
     </script>
 
 </body>
