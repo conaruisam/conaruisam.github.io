@@ -29,3 +29,18 @@ function getEdad(dateString) {
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
+
+// Smooth scroll for in-page anchors (compensate fixed navbar height)
+$(document).on('click', 'a.nav-link[href^="#"], a.navbar-brand[href^="#"]', function(element) {
+  var href = $(this).attr('href');
+  if (!href || href === '#') return;
+  var $target = $(href);
+  if ($target.length) {
+    element.preventDefault();
+    var navHeight = $('#main-nav').outerHeight() || 0;
+    var targetY = $target.offset().top - navHeight - 8; // small extra offset
+    $('html, body').animate({ scrollTop: targetY }, 500);
+    // close mobile menu if open
+    $('.navbar-collapse').collapse('hide');
+  }
+});
