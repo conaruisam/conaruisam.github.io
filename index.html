@@ -34,6 +34,9 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/calcularFechas.js"></script>
     <script src="js/typed.js-master/lib/typed.min.js"></script>
@@ -61,7 +64,7 @@
                 <div class="col-12 p-0">
                     <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
                         <span class="nav_isam navbar-brand">
-                            <a href="#inicio" style="text-decoration: none; color: white;">ISAM ZAHRIOU</a>
+                            <a href="#inicio" style="text-decoration: none; color: white;" data-translation="brand.name">ISAM ZAHRIOU</a>
                         </span>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
                             aria-controls="menunav" aria-expanded="false" aria-label="Abrir menú">
@@ -70,16 +73,16 @@
                         <div class="navbar-collapse col-auto collapse" id="menunav">
                             <ul class="navbar-nav flex-row ml-md-auto d-block d-lg-flex p-0"> 
                                 <li class="nav-item">
-                                    <a href="#inicio" class="nav-item nav-link">Inicio</a>
+                                    <a href="#inicio" class="nav-item nav-link" data-translation="nav.home">Inicio</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#aboutme" class="nav-item nav-link " onclick="cambiarClase(this)">Sobre mí</a>
+                                    <a href="#aboutme" class="nav-item nav-link" data-translation="nav.about" onclick="cambiarClase(this)">Sobre mí</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#timeline" class="nav-item nav-link " onclick="cambiarClase(this)">Trayectoria</a>
+                                    <a href="#timeline" class="nav-item nav-link" data-translation="nav.timeline" onclick="cambiarClase(this)">Trayectoria</a>
                                 </li>
                                 <li class="nav-item act">
-                                    <a href="#knowledge" class="nav-item nav-link " onclick="cambiarClase(this)">Conocimiento</a>
+                                    <a href="#knowledge" class="nav-item nav-link" data-translation="nav.knowledge" onclick="cambiarClase(this)">Conocimiento</a>
                                 </li>
                                 <!--
                                 <li class="nav-item">
@@ -87,6 +90,10 @@
                                 </li>
                                 -->         
                             </ul>
+                            <!-- Language toggle button -->
+                            <div class="ml-2 mt-2 mt-lg-0">
+                                <button id="lang-toggle" class="btn btn-sm btn-outline-light" aria-label="Cambiar idioma">EN</button>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -108,9 +115,8 @@
                     <span class="encabezado_isam d-none d-md-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
                     <span class="encabezado_isam_mobile d-md-none d-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
 
-                    <div id="typed-strings">
+                    <div id="typed-strings" data-translation="typed.strings">
                         <p>Desarrollador de software</p>
-                        <!-- <p>Full-stack developer</p> -->
                         <p>Persona autodidacta</p>
                         <p>Proactivo</p>
                         <p></p>
@@ -128,11 +134,10 @@
                 <div class="col-md-6 columnsmain aboutme">
                     <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
                     <div class="p_aboutme">
-                        <p data-aos="fade-up">
+                        <p data-aos="fade-up" data-translation="about.greeting">
                             ¡Hola, mundo!
                         </p>
-                        <p data-aos="fade-up">
-                            Me llamo Isam, nací en Madrid, el 30 de julio de 1999 y  
+                        <p data-aos="fade-up"><span data-translation="about.intro">Me llamo Isam, nací en Madrid, el 30 de julio de 1999 y</span>
                             
                             <span data-toggle="tooltip" data-placement="top" title="Calculado al vuelo con un script...">
                                 <u style="cursor: pointer;"><script>
@@ -140,12 +145,12 @@
                                 </script></u>
                             </span>
                         </p>
-                        <p data-aos="fade-up-right">
+                        <p data-aos="fade-up-right" data-translation="about.tech_fascination">
                             Desde muy pequeño siempre me han fascinado los ordenadores y explorar todo lo que se puede hacer con ellos, 
                             disfrutando de <span class="font-italic">cacharrear</span> y aprender jugando. <br>
                             Desde mi primer ordenador, la informática ha formado parte de mi vida, ya sea como herramienta de aprendizaje, hobby o trabajo.
                         </p>
-                        <p data-aos="fade-up-left">
+                        <p data-aos="fade-up-left" data-translation="about.education">
                             Tras finalizar la E.S.O., decidí cursar un <span class="font-weight-bold">CFGM en Sistemas Microinformáticos y Redes (SMR)</span>. 
                             Sabía que me apasionaba la informática, pero aún no tenía claro en qué área especializarme. <br><br>
                             Al completar el ciclo, descubrí que lo que más me motivaba y fascinaba era el <span class="font-weight-bold"> desarrollo de Software </span>, 
@@ -161,7 +166,7 @@
             <div class="row" id="timeline">
                 <div class="col columnsmain">
                     <div id="headertimeline">
-                        <h1>Mi trayectoria</h1>
+                        <h1 data-translation="timeline.title">Mi trayectoria</h1>
                     </div>
                     <ul class="timeline">
                         <!-- Item 1 -->
@@ -169,11 +174,11 @@
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">Mi primer ordenador</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item1.title">Mi primer ordenador</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Feb
                                             2007</span></span>
                                 </div>
-                                <div class="desc" data-aos="zoom-in">
+                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item1.desc">
                                     Mis padres comenzaron un negocio y necesitaban un ordenador para llevar las
                                     cuentas. Yo aprovechaba cada oportunidad para usarlo y aprender por mi cuenta,
                                     lo que despertó desde muy temprano mi interés por la informática.
@@ -186,11 +191,11 @@
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">PRE-ESO</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item2.title">PRE-ESO</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">2007 -
                                             2016</span></span>
                                 </div>
-                                <div class="desc" data-aos="fade-down">
+                                <div class="desc" data-aos="fade-down" data-translation="timeline.item2.desc">
                                     En esta etapa aprendí cómo funcionan los componentes de un ordenador: a montarlos,
                                     mantenerlos y repararlos. Monté y arreglé equipos para amigos y conocidos, lo que
                                     me aportó experiencia práctica valiosa.
@@ -203,10 +208,10 @@
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">Educación Secundaria</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item3.title">Educación Secundaria</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Jul 2016</span></span>
                                 </div>
-                                <div class="desc" data-aos="fade-down">
+                                <div class="desc" data-aos="fade-down" data-translation="timeline.item3.desc">
                                     Finalicé la ESO, una etapa en la que consolidé hábitos de estudio y aprendí la
                                     importancia de la constancia y la disciplina, especialmente cuando quieres
                                     progresar en algo que te apasiona.
@@ -219,14 +224,14 @@
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">SMR</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item4.title">SMR</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sept
                                             2016</span></span>
                                 </div>
-                                <div class="desc" data-aos="zoom-in">
+                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item4.desc">
                                     En el ciclo formativo aprendí sobre redes —protocolos, direccionamiento IP y
                                     administración básica— y sobre sistemas, incluyendo máquinas virtuales y sistemas
-                                    de archivos. <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank" rel="noopener noreferrer">Este</a>
+                                    de archivos. <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank" rel="noopener noreferrer" data-translation="timeline.item4.link">Este</a>
                                     trabajo recoge parte de lo aprendido. Además, me interesé por el desarrollo
                                     web front‑end y obtuve la certificación CCNA1.
                                     <div>
@@ -242,11 +247,11 @@
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">Prácticas NIMBEO</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item5.title">Prácticas NIMBEO</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sep
                                             2017</span></span>
                                 </div>
-                                <div class="desc" data-aos="fade-down">
+                                <div class="desc" data-aos="fade-down" data-translation="timeline.item5.desc">
                                     Elegí la modalidad de FCT ampliada y realicé 9 meses de prácticas en NIMBEO,
                                     una empresa de desarrollo de software. Allí consolidé conocimientos de desarrollo
                                     web y aprendí AngularJS y jQuery. Fue una experiencia que reforzó mi enfoque
@@ -265,11 +270,11 @@
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">Programador COBOL Indra</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item6.title">Programador COBOL Indra</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Ago
                                             2018</span></span>
                                 </div>
-                                <div class="desc" data-aos="zoom-in">
+                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item6.desc">
                                     Realicé un curso intensivo de tres semanas en el que estudié SQL, COBOL y
                                     reforcé Linux. Posteriormente participé en un proyecto de banca en Indra,
                                     desarrollando en COBOL sobre UNIX. Estuve alrededor de un año y tres meses,
@@ -284,17 +289,17 @@
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">COBOL Migración</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item7.title">COBOL Migración</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Nov
                                             2019</span></span>
                                 </div>
-                                <div class="desc" data-aos="zoom-in">
+                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item7.desc">
                                     Participé en la migración de Caixa Geral a ABANCA, donde apoyé a los equipos
                                     resolviendo dudas y analizando cómo los procesos trataban la información.
                                     Trabajé con z/OS Mainframe y adquirí experiencia práctica en JCL y CICS.
                                     <a
                                         href="https://www.lavozdegalicia.es/noticia/economia/2020/03/17/abanca-finaliza-integracion-banco-caixa-geral/0003_202003G17P38995.htm"
-                                        target="_blank" rel="noopener noreferrer">
+                                        target="_blank" rel="noopener noreferrer" data-translation="timeline.item7.link">
                                         Artículo sobre la finalización de la integración.
                                     </a>
                                 </div>
@@ -306,11 +311,11 @@
                             <div class="direction-r">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">CFGS DAM ON-LINE</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item8.title">CFGS DAM ON-LINE</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sep
                                             2019 - Mar 2021</span></span>
                                 </div>
-                                <div class="desc" data-aos="zoom-in">
+                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item8.desc">
                                     Compaginé el trabajo con el ciclo formativo de Desarrollo de Aplicaciones
                                     Multiplataforma (CFGS DAM), lo que me permitió ampliar mis competencias en
                                     desarrollo y consolidar conocimientos prácticos.
@@ -323,19 +328,19 @@
                             <div class="direction-l">
                                 <div class="flag-wrapper">
                                     <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in">DXC Technology</span>
+                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item9.title">DXC Technology</span>
                                     <span class="time-wrapper" data-aos="zoom-out"><span class="time">Feb
                                             2021 - Actualmente</span></span>
                                 </div>
                                 <div class="desc" data-aos="zoom-in">
-                                    <h6>Medios de pago</h6>
-                                    Desarrollo en COBOL sobre una infraestructura compleja en HP NonStop,
+                                    <h6 data-translation="timeline.item9.payments">Medios de pago</h6>
+                                    <div data-translation="timeline.item9.payments_desc">Desarrollo en COBOL sobre una infraestructura compleja en HP NonStop,
                                     contribuyendo a la implementación y mantenimiento de funcionalidades relacionadas
-                                    con medios de pago.
+                                    con medios de pago.</div>
                                     <hr>
-                                    <h6>Digitalización de documentos</h6>
-                                    Trabajo en el desarrollo, análisis y testing de una aplicación en Java
-                                    (Spring Boot), además de colaborar en tareas de bases de datos.
+                                    <h6 data-translation="timeline.item9.digitalization">Digitalización de documentos</h6>
+                                    <div data-translation="timeline.item9.digitalization_desc">Trabajo en el desarrollo, análisis y testing de una aplicación en Java
+                                    (Spring Boot), además de colaborar en tareas de bases de datos.</div>
                                 </div>
                             </div>
                         </li>                        
@@ -347,7 +352,7 @@
             <div class="row" id="knowledge" data-aos="fade-up"> 
                 <div class="col">
                     <div class="container">
-                        <h2 class="text-center">Conocimientos</h2>
+                        <h2 class="text-center" data-translation="knowledge.title">Conocimientos</h2>
                         <div class="row mt-3">
                             <div class="col-md-3">
                                 <div class="list-group" id="lista" role="tablist">
@@ -396,7 +401,7 @@
 
                                 </div>
                                 <div class="text-center mt-3">
-                                    <p>
+                                    <p data-translation="knowledge.more_info">
                                         Pulse para más información
                                     </p>                                    
                                 </div>
@@ -405,7 +410,7 @@
                                 <div class="tab-content" id="nav-tabContent">
 
                                     <div class="tab-pane fade show active" id="default" role="tabpanel" aria-labelledby="default">
-                                        <p style="font-size: 20px;">
+                                        <p style="font-size: 20px;" data-translation="knowledge.default">
                                             Mis conocimientos están en constante crecimiento; siempre intento tener algún proyecto en mente o algo que aprender.
                                             <hr>
                                             En los apartados de la izquierda, están más definidos.
@@ -417,7 +422,7 @@
                                                 <img src="img/logos/cobol.png" alt="COBOL logo" loading="lazy" width="200" height="200">
                                             </div>
                                         <hr>
-                                    <div class="mb-4">
+                                    <div class="mb-4" data-translation="cobol.content">
                                         <p>
                                             Después de finalizar mi ciclo formativo de grado medio, descubrí el mundo de 
                                             <span class="font-weight-bold">COBOL</span>, un lenguaje que desconocía por completo pero que terminó 
@@ -444,7 +449,7 @@
                                             <li>Entornos transaccionales en sistemas <strong>HP NonStop</strong>.</li>
                                         </ul>
 
-                                        <p>
+                                        <p data-translation="sql.figcaption1">
                                             COBOL fue el lenguaje que más moldeó mi forma de pensar y estructurar código. 
                                             Con el tiempo he ampliado mis conocimientos hacia otros lenguajes y tecnologías, por lo que 
                                             actualmente no desarrollo proyectos personales en COBOL —por razones lógicas relacionadas 
@@ -461,13 +466,11 @@
                                         </div>
                                         <hr>
                                         <div class="mb-4">
-                                            <p>
-                                                Tengo un conocimiento sólido en <span class="font-weight-bold">SQL y NoSQL</span>, habiéndolos utilizado en entornos reales con 
+                                            <p data-translation="sql.summary">Tengo un conocimiento sólido en <span class="font-weight-bold">SQL y NoSQL</span>, habiéndolos utilizado en entornos reales con 
                                                 bases de datos de gran volumen. Comprendo el funcionamiento de <span class="font-weight-bold">particiones de tablas, índices</span> 
-                                                y técnicas de optimización de consultas, así como la creación y relación de estructuras complejas.
-                                            </p>
+                                                y técnicas de optimización de consultas, así como la creación y relación de estructuras complejas.</p>
 
-                                            <p>He trabajado con diferentes herramientas de gestión de bases de datos:</p>
+                                            <p data-translation="sql.tools_intro">He trabajado con diferentes herramientas de gestión de bases de datos:</p>
                                             <ul>
                                                 <li>SQL Developer</li>
                                                 <li>MySQL Workbench</li>
@@ -500,7 +503,7 @@
                                                         <figure class="figure">
                                                             <img class="img-fluid rounded" src="img/sqldeveloper.png" alt="Oracle SQL Developer" loading="lazy">
                                                             <figcaption class="figure-caption">
-                                                                <p class="text-center">Oracle - SQLDeveloper</p>
+                                                                <p class="text-center" data-translation="sql.figcaption1">Oracle - SQLDeveloper</p>
                                                             </figcaption>
                                                         </figure>
                                                     <!-- </a> -->
@@ -513,7 +516,7 @@
                                                             <img class="img-fluid rounded" src="img/spufi.jpg" alt="DB2 SPUFI screenshot"
                                                                 width="500" height="500">
                                                             <figcaption class="figure-caption">
-                                                                <p class="text-center">DB2 - SPUFI.</p>
+                                                                <p class="text-center" data-translation="sql.figcaption2">DB2 - SPUFI.</p>
                                                             </figcaption>
                                                         </figure>                                                    
                                                     <!-- </a> -->
@@ -528,25 +531,24 @@
                                         </div>
                                         <hr>
                                         <p class="mt-2">
-                                            Tengo un conocimiento sólido y actualizado de Java vanilla, mejorando mis habilidades constantemente.<br>
-                                            Cuento con más de tres años de experiencia en el desarrollo de aplicaciones para CaixaBank utilizando el framework Spring Boot, haciendo uso de diferentes módulos según las necesidades del proyecto, como:                                            
+                                            <span data-translation="java.opening">Tengo un conocimiento sólido y actualizado de Java vanilla, mejorando mis habilidades constantemente.</span><br>
+                                            <span data-translation="java.experience_intro">Cuento con más de tres años de experiencia en el desarrollo de aplicaciones para CaixaBank utilizando el framework Spring Boot, haciendo uso de diferentes módulos según las necesidades del proyecto, como:</span>
                                             <ul>
-                                                <li> Spring Data </li>
-                                                <li> Spring Test </li>
-                                                <li> Spring Batch </li>
-                                                <li> Spring Security </li>
-                                                <li> Spring Cache </li>
-                                                <li> Spring Mail </li>
-                                                <li> Spring Apache Kafka </li>
+                                                <li data-translation="java.module.0">Spring Data</li>
+                                                <li data-translation="java.module.1">Spring Test</li>
+                                                <li data-translation="java.module.2">Spring Batch</li>
+                                                <li data-translation="java.module.3">Spring Security</li>
+                                                <li data-translation="java.module.4">Spring Cache</li>
+                                                <li data-translation="java.module.5">Spring Mail</li>
+                                                <li data-translation="java.module.6">Spring Apache Kafka</li>
                                             </ul>
-                                            Además, soy docente de Java y he impartido clases particulares a más de cinco alumnos, ayudándolos no solo a aprobar su grado superior sin dificultades, sino también a alcanzar niveles avanzados.
+                                            <span data-translation="java.teaching">Además, soy docente de Java y he impartido clases particulares a más de cinco alumnos, ayudándolos no solo a aprobar su grado superior sin dificultades, sino también a alcanzar niveles avanzados.</span>
 
-                                            Poseo un dominio profundo de interfaces funcionales, expresiones lambda y el uso de Streams, aplicándolos de forma eficiente en entornos reales de desarrollo. <br>
+                                            <span data-translation="java.features">Poseo un dominio profundo de interfaces funcionales, expresiones lambda y el uso de Streams, aplicándolos de forma eficiente en entornos reales de desarrollo.</span> <br>
 
+                                            <span data-translation="java.project_desc">Tengo un pequeño proyecto utilizando la librería de JFrame, utilizando IntelliJ IDEA, xamp</span>
 
-                                            Tengo un pequeño proyecto utilizando la librería de JFrame, utilizando IntelliJ IDEA, xamp
-
-                                            Dejo el enlace de todo el código en mi <a href="https://github.com/conaruisam/Concesionario_Interface-CRUD" target="_blank" rel="noopener noreferrer"> github</a>
+                                            <span data-translation="java.project_line">Dejo el enlace de todo el código en mi <a href="https://github.com/conaruisam/Concesionario_Interface-CRUD" target="_blank" rel="noopener noreferrer"> github</a></span>
                                             <div class="carousel slide d-none d-md-block" id="secondary-carousel" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                     <li data-target="#secondary-carousel" data-slide-to="0" class=""></li>
@@ -587,10 +589,10 @@
                                                         <img src="img/curso-java.jpg" class="img-fluid imagen" alt="Curso Java Udemy" loading="lazy">
                                                     <!-- </a> -->
                                                     <div class="card-header">
-                                                        <h4 class="card-title">Curso java Udemy</h4> <hr>
-                                                        <h6 class="card-subtitle">
+                                                        <h4 class="card-title" data-translation="java.course_title">Curso java Udemy</h4> <hr>
+                                                        <h6 class="card-subtitle" data-translation="java.course_sub">
                                                             También dediqué bastantes horas a este curso de udemy el cual me ayudó mucho <br>
-                                                            <a href="https://www.udemy.com/course/aprende-programacion-en-java-desde-cero/" target="_blank" rel="noopener noreferrer">Enlace al curso</a>.
+                                                            <a href="https://www.udemy.com/course/aprende-programacion-en-java-desde-cero/" target="_blank" rel="noopener noreferrer" data-translation="java.course_link">Enlace al curso</a>.
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -620,17 +622,17 @@
 
                                         <p>Técnicamente, tengo experiencia en:</p>
                                         <ul>
-                                            <li>Programación orientada a objetos (OOP)</li>
-                                            <li>Manejo de memoria y punteros</li>
-                                            <li>Uso de <code>Smart Pointers</code></li>
-                                            <li>Templates y metaprogramación básica</li>
-                                            <li>STL (Standard Template Library)</li>
-                                            <li>Estructuras de datos eficientes</li>
-                                            <li>Control de flujo y estructuras de control</li>
-                                            <li>Buenas prácticas de diseño y optimización</li>
+                                            <li data-translation="cplusplus.li.0">Programación orientada a objetos (OOP)</li>
+                                            <li data-translation="cplusplus.li.1">Manejo de memoria y punteros</li>
+                                            <li data-translation="cplusplus.li.2">Uso de <code>Smart Pointers</code></li>
+                                            <li data-translation="cplusplus.li.3">Templates y metaprogramación básica</li>
+                                            <li data-translation="cplusplus.li.4">STL (Standard Template Library)</li>
+                                            <li data-translation="cplusplus.li.5">Estructuras de datos eficientes</li>
+                                            <li data-translation="cplusplus.li.6">Control de flujo y estructuras de control</li>
+                                            <li data-translation="cplusplus.li.7">Buenas prácticas de diseño y optimización</li>
                                         </ul>
 
-                                        <p>
+                                        <p data-translation="cplusplus.ending">
                                             C++ ha sido clave para mejorar mi forma de pensar como programador, especialmente en términos de 
                                             rendimiento y diseño eficiente de software.
                                         </p>
@@ -644,7 +646,7 @@
                                         </div>
                                         <hr>
                                         <div class="mb-4">
-                                            <h1>Front-end</h1>
+                                            <h1 data-translation="dweb.frontend">Front-end</h1>
                                             <p>
                                                 Mi experiencia en desarrollo web comenzó durante el ciclo formativo de grado medio, aprendiendo 
                                                 <span class="font-weight-bold">HTML, CSS</span> y fundamentos de <span class="font-weight-bold">JavaScript</span>. 
@@ -658,7 +660,7 @@
                                                 siendo la base del diseño de esta web.
                                             </p>
 
-                                            <h1 class="mt-4">Back-end</h1>
+                                            <h1 class="mt-4" data-translation="dweb.backend">Back-end</h1>
                                             <p>
                                                 En el back-end he trabajado principalmente con <span class="font-weight-bold">COBOL</span> en entornos empresariales. 
                                                 Además, tengo experiencia en <span class="font-weight-bold">Java</span> y desarrollo de <span class="font-weight-bold">microservicios</span>, 
@@ -725,12 +727,12 @@
                 <div class="col-sm-12 col-md-4 text-center text-md-left">
                     
                     <ul class="social_media" style="padding: 0;">                        
-                                                <li>
-                                                    <a href="https://github.com/conaruisam" target="_blank" rel="noopener noreferrer"><i class="fab fa-github icon"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="https://www.linkedin.com/in/isam-zahriou-berrak-116057158/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in icon"></i></a>
-                                                </li>
+                        <li>
+                            <a href="https://github.com/conaruisam" target="_blank" rel="noopener noreferrer"><i class="fab fa-github icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/isam-zahriou-berrak-116057158/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
                     </ul>
                 </div>
                 
@@ -757,18 +759,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script para que se repitan las letras en el encabezado. -->
-    <script>
-        $('document').ready(function () {
-            var typed = new Typed('#typed', {
-                stringsElement: '#typed-strings',
-                backSpeed: 50,
-                typeSpeed: 120,
-                loop: true
-                /* shuffle: true */
-            });
-        });
-    </script>
+    <!-- Typed.js initialization moved to js/scripts.js to support language switching -->
     <!-- Para cambiar la transparencia del menú -->
     <script>
 

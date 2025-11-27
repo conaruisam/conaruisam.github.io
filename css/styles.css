@@ -31,10 +31,10 @@ html {
 }
 
 .nav_isam {
-    color: white; 
+    color: white;
     text-shadow: #474747 3px 5px 2px;
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: -1px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.5px;
     margin-left: 15px;
     font-size: 30px;
 }
@@ -326,19 +326,40 @@ nav ul li a:hover{
 	}
 }
 
-.encabezado_isam {    
-    color: white;    
-    text-shadow: #474747 3px 5px 2px;
-    font-family: 'Segoe UI';
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.encabezado_isam_mobile {    
+.encabezado_isam {
     color: white;
     text-shadow: #474747 3px 5px 2px;
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: -0.6px;
+    line-height: 1;
+}
+
+.encabezado_isam_mobile {
+    color: white;
+    text-shadow: #474747 3px 5px 2px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -0.3px;
+    line-height: 1.05;
+}
+
+/* Typed strings styling (header subtitle) */
+#typed, #typed-strings, .nav_isam {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Language toggle button in navbar */
+#lang-toggle {
+    border-color: rgba(255,255,255,0.25);
+    color: #fff;
+}
+
+#lang-toggle:hover {
+    color: #fff;
 }
 
 .p_aboutme {
