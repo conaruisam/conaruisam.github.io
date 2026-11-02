@@ -1,799 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Isam Zahriou Berrak">
-    <meta name="description" content="Portfolio de Isam Zahriou Berrak — desarrollador de software con experiencia en COBOL, Java, SQL y desarrollo web. Proyectos, trayectoria y contacto.">
-    <meta name="keywords" content="Isam, Zahriou, Berrak, Programador, Desarrollador, Programmer, Developer, Autodidacta, Software, Engineer">
-    <title>Isam Zahriou Berrak</title>
-    <link rel="shortcut icon" href="img/logos/favicon.png" />
-    <link rel="icon" href="img/logos/favicon.png">
-    <link rel="canonical" href="https://conaruisam.github.io/">
-    <meta name="theme-color" content="#171a1d">
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Open Graph -->
-    <meta property="og:title" content="Isam Zahriou Berrak — Desarrollador de software">
-    <meta property="og:description" content="Portfolio de Isam Zahriou Berrak: experiencia en COBOL, Java, SQL, C++ y desarrollo web. Proyectos y trayectoria profesional.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://conaruisam.github.io/">
-    <meta property="og:image" content="https://conaruisam.github.io/img/me.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/social_media.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <!-- 
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="js/calcularFechas.js"></script>
-    <script src="js/typed.js-master/lib/typed.min.js"></script>
-    <!-- GOOGLE ANALYTICS -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177214124-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-177214124-1');
-    </script>
-    
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101413">
+  <meta name="description" content="Isam Zahriou Berrak — Tech Lead y Java Backend Engineer especializado en servicios financieros, APIs e integración de sistemas." id="meta-description">
+  <title>Isam Zahriou Berrak — Tech Lead & Java Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Isam Zahriou Berrak, inicio" data-i18n-aria="brandAria"><span class="brand-mark">IZ</span><span>ISAM<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegación principal" data-i18n-aria="navAria">
+      <a href="#perfil" data-i18n="navProfile">Perfil</a><a href="#experiencia" data-i18n="navExperience">Experiencia</a><a href="#stack" data-i18n="navStack">Stack</a><a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+      <a class="nav-cta" href="https://www.linkedin.com/in/isam-/" target="_blank" rel="noreferrer"><span data-i18n="navContact">Hablemos</span> <span>↗</span></a>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to English" title="Switch language"><span class="lang-option active" data-lang-option="es">ES</span><span class="lang-divider">/</span><span class="lang-option" data-lang-option="en">EN</span></button>
+    </nav>
+  </header>
 
-<body data-spy="scroll" data-target="#main-nav">
-    <div class="container-fluid">    
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> <span data-i18n="eyebrow">MADRID, ESPAÑA · SOFTWARE ENGINEERING</span></p>
+        <h1 data-i18n="heroTitle">Construyo software.<br><span class="muted-word">Conecto sistemas.</span><br><span class="accent-word">Lidero equipos.</span></h1>
+        <p class="hero-lead" data-i18n="heroLead">Soy Isam Zahriou Berrak, Tech Lead y Java Backend Engineer. Trabajo en soluciones para el sector financiero, combinando desarrollo, diseño técnico y coordinación de equipos.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experiencia"><span data-i18n="heroJourney">Conoce mi trayectoria</span> <span>↓</span></a>
+          <a class="button button-quiet" href="https://github.com/conaruisam" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span>JAVA · SPRING BOOT · KAFKA</span><span data-i18n="heroMetaLeadership">TECH LEADERSHIP</span><span data-i18n="heroMetaFinance">FINANCIAL SERVICES</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Resumen de experiencia" data-i18n-aria="visualAria">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-core"><span class="core-small" data-i18n="coreEngineering">ENGINEERING</span><strong>IZ<span>.</span></strong><span class="core-bottom" data-i18n="coreBottom">THINK · BUILD · IMPROVE</span></div>
+        <div class="float-card card-top"><span class="card-kicker" data-i18n="focus">FOCUS</span><strong data-i18n="backendEngineering">Backend<br>Engineering</strong><span class="card-line"></span></div>
+        <div class="float-card card-bottom"><span class="card-kicker" data-i18n="teamKicker">TEAM</span><strong data-i18n="teamSize">Hasta 12<br>personas</strong><span class="card-caption" data-i18n="teamCaption">Coordinación técnica</span></div>
+        <span class="visual-index">01 / 04</span>
+      </div>
+      <a class="scroll-cue" href="#perfil"><span></span> <span data-i18n="scrollCue">SCROLL PARA EXPLORAR</span></a>
+    </section>
 
-        <!-- HEADER -->
-        <header>
-            <div class="row">
-                <!-- MENU DE NAVEGACIÓN -->
-                <div class="col-12 p-0">
-                    <nav class="navbar navbar-expand-lg fixed-top p-0" id="main-nav">
-                        <span class="nav_isam navbar-brand">
-                            <a href="#inicio" style="text-decoration: none; color: white;" data-translation="brand.name">ISAM ZAHRIOU</a>
-                        </span>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunav"
-                            aria-controls="menunav" aria-expanded="false" aria-label="Abrir menú">
-                            <span class="icon-menu" style="font-size: 23px; color: white;"></span>
-                        </button>
-                        <div class="navbar-collapse col-auto collapse" id="menunav">
-                            <ul class="navbar-nav flex-row ml-md-auto d-block d-lg-flex p-0"> 
-                                <li class="nav-item">
-                                    <a href="#inicio" class="nav-item nav-link" data-translation="nav.home">Inicio</a>
-                                </li>
-                                <li class="nav-item act">
-                                    <a href="#aboutme" class="nav-item nav-link" data-translation="nav.about" onclick="cambiarClase(this)">Sobre mí</a>
-                                </li>
-                                <li class="nav-item act">
-                                    <a href="#timeline" class="nav-item nav-link" data-translation="nav.timeline" onclick="cambiarClase(this)">Trayectoria</a>
-                                </li>
-                                <li class="nav-item act">
-                                    <a href="#knowledge" class="nav-item nav-link" data-translation="nav.knowledge" onclick="cambiarClase(this)">Conocimiento</a>
-                                </li>
-                                <!--
-                                <li class="nav-item">
-                                    <a href="#contacto" class="nav-item nav-link"> Contacto </a>
-                                </li>
-                                -->         
-                            </ul>
-                            <!-- Language toggle button -->
-                            <div class="ml-2 mt-2 mt-lg-0">
-                                <button id="lang-toggle" class="btn btn-sm btn-outline-light" aria-label="Cambiar idioma">EN</button>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
+    <section class="intro section-wrap section-pad" id="perfil">
+      <div class="section-label" data-i18n="profileLabel"><span>01</span> PERFIL</div>
+      <div class="intro-content">
+        <p class="section-kicker" data-i18n="profileKicker">DE LA IMPLEMENTACIÓN A LAS DECISIONES TÉCNICAS</p>
+        <h2 data-i18n="profileTitle">Me interesa entender el sistema completo, <em>no solo la tarea.</em></h2>
+        <div class="intro-columns">
+          <p data-i18n="profileP1">Mi experiencia se ha desarrollado principalmente en el sector bancario, trabajando en proyectos para CaixaBank desde DXC Technology. He participado en iniciativas de medios de pago y digitalización documental, en entornos donde la fiabilidad, la trazabilidad y la mantenibilidad importan.</p>
+          <p data-i18n="profileP2">En mi día a día combino desarrollo backend con responsabilidades de liderazgo técnico: análisis de requisitos, diseño de soluciones, integración entre servicios, revisión técnica, mentoring y coordinación con distintos interlocutores.</p>
+        </div>
+        <div class="principles"><div><span>01 /</span><strong data-i18n="principle1Title">Claridad técnica</strong><small data-i18n="principle1Text">Entender el problema antes de elegir la solución.</small></div><div><span>02 /</span><strong data-i18n="principle2Title">Software mantenible</strong><small data-i18n="principle2Text">Priorizar calidad, trazabilidad y evolución.</small></div><div><span>03 /</span><strong data-i18n="principle3Title">Trabajo en equipo</strong><small data-i18n="principle3Text">Compartir contexto, desbloquear y hacer crecer.</small></div></div>
+      </div>
+    </section>
 
-        <!-- MAIN -->
-        <main>
-            <!-- Home -->
-            <div class="row" id="inicio">
-                <div class="col columnsmain text-center" style="margin-top: 300px">
-                    <p class="iconosinicio">
-                        <span class="icon-laptop"></span>
-                        <span class="icon-plus"></span>
-                        <span class="icon-coffee-1"></span>
-                        <span class="icon-eq-outline"></span>
-                    </p>
+    <section class="experience section-wrap section-pad" id="experiencia">
+      <div class="section-label" data-i18n="experienceLabel"><span>02</span> EXPERIENCIA</div>
+      <div class="section-main">
+        <div class="section-heading"><p class="section-kicker" data-i18n="experienceKicker">TRAYECTORIA PROFESIONAL</p><h2 data-i18n="experienceTitle">Experiencia en sistemas<br><em>que importan.</em></h2></div>
+        <div class="timeline">
+          <article class="timeline-item current"><div class="timeline-date">FEB 2021 — ACTUALIDAD</div><div class="timeline-body"><div class="timeline-title"><h3>DXC Technology</h3><span class="pill" data-i18n="current">ACTUAL</span></div><p class="role" data-i18n="dxcRole">Software Engineer · Technical Lead</p><p data-i18n="dxcSummary">Proyectos para CaixaBank en medios de pago y digitalización documental. Desempeño responsabilidades de Technical Lead, coordinando técnicamente equipos de hasta 12 personas.</p><ul><li data-i18n="dxcBullet1">Diseño de soluciones de extremo a extremo: requisitos, contratos, integración entre servicios y persistencia.</li><li data-i18n="dxcBullet2">Desarrollo e integración de APIs REST con Java y Spring Boot.</li><li data-i18n="dxcBullet3">Planificación, estimaciones, mentoring, revisión técnica y resolución de bloqueos.</li><li data-i18n="dxcBullet4">Pruebas unitarias y de integración, despliegues y monitorización de producción.</li></ul><div class="tag-list"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>IBM MQ</span><span>Oracle / DB2</span><span>Jenkins</span><span>Grafana</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">NOV 2019 — ABR 2020</div><div class="timeline-body"><h3>Accenture España</h3><p class="role" data-i18n="accentureRole">Senior Developer · Migración bancaria</p><p data-i18n="accentureSummary">Participación en la migración de Banco Caixa Geral / ABANCA, trabajando con procesos de envío de tablas y ficheros, documentación técnica e inventario de procesos.</p><div class="tag-list"><span>JCL</span><span>Mainframe</span><span>Migración</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">SEP 2018 — NOV 2019</div><div class="timeline-body"><h3>Minsait (Indra)</h3><p class="role" data-i18n="minsaitRole">COBOL Developer</p><p data-i18n="minsaitSummary">Desarrollo y mantenimiento de procesos batch, transacciones y rutinas COBOL para el producto bancario OneSait Banking, utilizado por distintas entidades financieras.</p><div class="tag-list"><span>COBOL</span><span>JCL</span><span>Linux</span><span>Micro Focus</span></div></div></article>
+          <article class="timeline-item"><div class="timeline-date">SEP 2017 — JUN 2018</div><div class="timeline-body"><h3>Nimbeo</h3><p class="role" data-i18n="nimbeoRole">Web Developer · IT Support Intern</p><p data-i18n="nimbeoSummary">Primer entorno profesional: colaboración en desarrollo web y soporte técnico, participando en resolución de incidencias y tareas de desarrollo.</p><div class="tag-list"><span data-i18n="tagWebDevelopment">Desarrollo web</span><span data-i18n="tagItSupport">Soporte IT</span></div></div></article>
+        </div>
+      </div>
+    </section>
 
-                    <span class="encabezado_isam d-none d-md-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
-                    <span class="encabezado_isam_mobile d-md-none d-block" data-aos="zoom-in">Isam Zahriou Berrak</span>
+    <section class="stack section-wrap section-pad" id="stack">
+      <div class="section-label" data-i18n="technologyLabel"><span>03</span> TECNOLOGÍA</div>
+      <div class="section-main">
+        <div class="section-heading"><p class="section-kicker" data-i18n="technologyKicker">HERRAMIENTAS Y ÁREAS DE TRABAJO</p><h2 data-i18n="technologyTitle">Un stack construido<br><em>en proyectos reales.</em></h2><p class="heading-note" data-i18n="technologyNote">Tecnologías y herramientas con las que he trabajado en desarrollo, integración, testing y operación de soluciones.</p></div>
+        <div class="stack-grid">
+          <article class="stack-card stack-feature"><span class="stack-number">01</span><div class="stack-icon">{ }</div><h3 data-i18n="stackBackendTitle">Backend & APIs</h3><p data-i18n="stackBackendText">Desarrollo de servicios, lógica de negocio e integración.</p><div class="tag-list"><span>Java 11 / 17</span><span>Spring Boot</span><span>Spring Batch</span><span>REST</span><span>Microservicios</span></div></article>
+          <article class="stack-card"><span class="stack-number">02</span><div class="stack-icon">↔</div><h3 data-i18n="stackMessagingTitle">Mensajería</h3><p data-i18n="stackMessagingText">Comunicación asíncrona y sistemas de integración.</p><div class="tag-list"><span>Apache Kafka</span><span>IBM MQ</span><span>MQSeries</span></div></article>
+          <article class="stack-card"><span class="stack-number">03</span><div class="stack-icon">▤</div><h3 data-i18n="stackDataTitle">Datos</h3><p data-i18n="stackDataText">Persistencia relacional y consultas SQL.</p><div class="tag-list"><span>Oracle</span><span>DB2</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>PL/SQL</span></div></article>
+          <article class="stack-card"><span class="stack-number">04</span><div class="stack-icon">⌘</div><h3 data-i18n="stackQualityTitle">Calidad & entrega</h3><p data-i18n="stackQualityText">Testing, integración continua y observabilidad.</p><div class="tag-list"><span>JUnit</span><span>Mockito</span><span>RestAssuredMockMvc</span><span>GitLab CI</span><span>Jenkins</span><span>Docker</span><span>ELK</span><span>Grafana</span></div></article>
+          <article class="stack-card"><span class="stack-number">05</span><div class="stack-icon">▣</div><h3 data-i18n="stackMainframeTitle">Mainframe</h3><p data-i18n="stackMainframeText">Experiencia en sistemas bancarios tradicionales.</p><div class="tag-list"><span>COBOL</span><span>JCL</span><span>CICS</span><span>z/OS</span><span>HP NonStop</span></div></article>
+          <article class="stack-card"><span class="stack-number">06</span><div class="stack-icon">↗</div><h3 data-i18n="stackLeadershipTitle">Liderazgo técnico</h3><p data-i18n="stackLeadershipText">Coordinación y acompañamiento de equipos.</p><div class="tag-list"><span>Diseño técnico</span><span>Estimaciones</span><span>Mentoring</span><span>Code review</span><span>Resolución de problemas</span></div></article>
+        </div>
+      </div>
+    </section>
 
-                    <div id="typed-strings" data-translation="typed.strings">
-                        <p>Desarrollador de software</p>
-                        <p>Persona autodidacta</p>
-                        <p>Proactivo</p>
-                        <p></p>
-                    </div>
+    <section class="projects section-wrap section-pad" id="proyectos">
+      <div class="section-label" data-i18n="projectsLabel"><span>04</span> PROYECTOS</div>
+      <div class="section-main">
+        <div class="section-heading"><p class="section-kicker" data-i18n="projectsKicker">LABORATORIO PERSONAL</p><h2 data-i18n="projectsTitle">Aprender haciendo.<br><em>Compartir lo aprendido.</em></h2><p class="heading-note" data-i18n="projectsNote">Proyectos y pruebas técnicas personales. No representan sistemas de producción de mis clientes.</p></div>
+        <div class="project-grid">
+          <a class="project-card" href="https://github.com/conaruisam/TestingKafka" target="_blank" rel="noreferrer"><div class="project-top"><span data-i18n="projectTypeKafka">01 / EVENT-DRIVEN</span><span>↗</span></div><div class="project-symbol">K</div><h3>Testing Kafka</h3><p data-i18n="projectKafka">Proyecto de experimentación con Apache Kafka y configuración de ELK para trabajar con mensajería y observabilidad.</p><div class="project-footer"><span>Kafka</span><span>ELK</span><span>GitHub</span></div></a>
+          <a class="project-card" href="https://github.com/conaruisam/SpringSecurityJWT" target="_blank" rel="noreferrer"><div class="project-top"><span data-i18n="projectTypeSecurity">02 / SECURITY</span><span>↗</span></div><div class="project-symbol">JWT</div><h3>Spring Security JWT</h3><p data-i18n="projectJwt">Proyecto de pruebas y aprendizaje relacionado con autenticación basada en JWT y Spring Security.</p><div class="project-footer"><span>Java</span><span>Spring Security</span><span>JWT</span></div></a>
+          <a class="project-card" href="https://github.com/conaruisam/Testing-profiles-JavaSpringBoot" target="_blank" rel="noreferrer"><div class="project-top"><span data-i18n="projectTypeConfiguration">03 / CONFIGURATION</span><span>↗</span></div><div class="project-symbol">⚙</div><h3>Spring Profiles</h3><p data-i18n="projectProfiles">Pruebas con perfiles de configuración en aplicaciones Java y Spring Boot.</p><div class="project-footer"><span>Java</span><span>Spring Boot</span><span>Profiles</span></div></a>
+          <a class="project-card" href="https://github.com/conaruisam/TestSpring_Cache" target="_blank" rel="noreferrer"><div class="project-top"><span data-i18n="projectTypePerformance">04 / PERFORMANCE</span><span>↗</span></div><div class="project-symbol">⌁</div><h3>Spring Cache</h3><p data-i18n="projectCache">Proyecto personal para explorar el uso de mecanismos de caché en el ecosistema Spring.</p><div class="project-footer"><span>Java</span><span>Spring Cache</span><span>GitHub</span></div></a>
+        </div>
+        <a class="all-projects" href="https://github.com/conaruisam" target="_blank" rel="noreferrer"><span data-i18n="allProjects">Ver todos mis repositorios en GitHub</span> <span>↗</span></a>
+      </div>
+    </section>
 
-                    <span id="typed" class="nav_isam" data-aos="fade-down"></span>
-                </div>
-            </div>
-            
-            <!-- About me -->
-            <div class="row" id="aboutme">
-                    
-                <img src="./img/me.jpg" alt="" class="col-md-6 foto_aboutme" data-aos="flip-up">
+    <section class="education section-wrap section-pad">
+      <div class="section-label" data-i18n="educationLabel"><span>05</span> FORMACIÓN</div>
+      <div class="section-main education-grid"><div><p class="section-kicker" data-i18n="educationKicker">FORMACIÓN ACADÉMICA</p><h2 data-i18n="educationTitle">Una base práctica.<br><em>Aprendizaje continuo.</em></h2></div><div class="education-list"><div><span>2021 — 2022</span><strong data-i18n="education1">Estudios de Ingeniería Informática</strong><small>Universidad Nacional de Educación a Distancia (UNED)</small></div><div><span>2019 — 2021</span><strong data-i18n="education2">CFGS Desarrollo de Aplicaciones Multiplataforma</strong><small data-i18n="education2Sub">Formación profesional de grado superior</small></div><div><span>2016 — 2018</span><strong data-i18n="education3">CFGM Sistemas Microinformáticos y Redes</strong><small data-i18n="education3Sub">Formación profesional de grado medio</small></div><div><span data-i18n="languagesLabel">IDIOMAS</span><strong data-i18n="languagesNative">Español y árabe · Nativo/bilingüe</strong><small data-i18n="languagesEnglish">Inglés · Actualmente cursando EOI C2.1</small></div></div></div>
+    </section>
 
-                <div class="col-md-6 columnsmain aboutme">
-                    <!-- <h2 data-aos="fade-down-right">Sobre mí</h2> -->
-                    <div class="p_aboutme">
-                        <p data-aos="fade-up" data-translation="about.greeting">
-                            ¡Hola, mundo!
-                        </p>
-                        <p data-aos="fade-up"><span data-translation="about.intro">Me llamo Isam, nací en Madrid, el 30 de julio de 1999 y</span>
-                            
-                            <span data-toggle="tooltip" data-placement="top" title="Calculado al vuelo con un script...">
-                                <u style="cursor: pointer;"><script>
-                                    document.write("tengo " + getEdad("1999/07/30 03:30:00") + " años.")
-                                </script></u>
-                            </span>
-                        </p>
-                        <p data-aos="fade-up-right" data-translation="about.tech_fascination">
-                            Desde muy pequeño siempre me han fascinado los ordenadores y explorar todo lo que se puede hacer con ellos, 
-                            disfrutando de <span class="font-italic">cacharrear</span> y aprender jugando. <br>
-                            Desde mi primer ordenador, la informática ha formado parte de mi vida, ya sea como herramienta de aprendizaje, hobby o trabajo.
-                        </p>
-                        <p data-aos="fade-up-left" data-translation="about.education">
-                            Tras finalizar la E.S.O., decidí cursar un <span class="font-weight-bold">CFGM en Sistemas Microinformáticos y Redes (SMR)</span>. 
-                            Sabía que me apasionaba la informática, pero aún no tenía claro en qué área especializarme. <br><br>
-                            Al completar el ciclo, descubrí que lo que más me motivaba y fascinaba era el <span class="font-weight-bold"> desarrollo de Software </span>, 
-                            y desde entonces he enfocado mi formación y carrera en este campo.
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Timeline -->
-            <div class="row" id="timeline">
-                <div class="col columnsmain">
-                    <div id="headertimeline">
-                        <h1 data-translation="timeline.title">Mi trayectoria</h1>
-                    </div>
-                    <ul class="timeline">
-                        <!-- Item 1 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item1.title">Mi primer ordenador</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Feb
-                                            2007</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item1.desc">
-                                    Mis padres comenzaron un negocio y necesitaban un ordenador para llevar las
-                                    cuentas. Yo aprovechaba cada oportunidad para usarlo y aprender por mi cuenta,
-                                    lo que despertó desde muy temprano mi interés por la informática.
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 2 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item2.title">PRE-ESO</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">2007 -
-                                            2016</span></span>
-                                </div>
-                                <div class="desc" data-aos="fade-down" data-translation="timeline.item2.desc">
-                                    En esta etapa aprendí cómo funcionan los componentes de un ordenador: a montarlos,
-                                    mantenerlos y repararlos. Monté y arreglé equipos para amigos y conocidos, lo que
-                                    me aportó experiencia práctica valiosa.
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 3 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item3.title">Educación Secundaria</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Jul 2016</span></span>
-                                </div>
-                                <div class="desc" data-aos="fade-down" data-translation="timeline.item3.desc">
-                                    Finalicé la ESO, una etapa en la que consolidé hábitos de estudio y aprendí la
-                                    importancia de la constancia y la disciplina, especialmente cuando quieres
-                                    progresar en algo que te apasiona.
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 4 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item4.title">SMR</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sept
-                                            2016</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item4.desc">
-                                    En el ciclo formativo aprendí sobre redes —protocolos, direccionamiento IP y
-                                    administración básica— y sobre sistemas, incluyendo máquinas virtuales y sistemas
-                                    de archivos. <a href="img/PDFs/EJEMPLO_REDES.pdf" target="_blank" rel="noopener noreferrer" data-translation="timeline.item4.link">Este</a>
-                                    trabajo recoge parte de lo aprendido. Además, me interesé por el desarrollo
-                                    web front‑end y obtuve la certificación CCNA1.
-                                    <div>
-                                        <img src="img/logos/dwicons.png" alt="DW icons" loading="lazy" width="200" height="150"
-                                            class="imgtimeline"><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 5 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item5.title">Prácticas NIMBEO</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sep
-                                            2017</span></span>
-                                </div>
-                                <div class="desc" data-aos="fade-down" data-translation="timeline.item5.desc">
-                                    Elegí la modalidad de FCT ampliada y realicé 9 meses de prácticas en NIMBEO,
-                                    una empresa de desarrollo de software. Allí consolidé conocimientos de desarrollo
-                                    web y aprendí AngularJS y jQuery. Fue una experiencia que reforzó mi enfoque
-                                    autodidacta.
-                                    <div>
-                                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><img
-                                                src="img/logos/W3Schools_logo.png" alt="W3Schools logo" loading="lazy" width="100" height="100"
-                                                class="imgtimeline"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 6 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item6.title">Programador COBOL Indra</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Ago
-                                            2018</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item6.desc">
-                                    Realicé un curso intensivo de tres semanas en el que estudié SQL, COBOL y
-                                    reforcé Linux. Posteriormente participé en un proyecto de banca en Indra,
-                                    desarrollando en COBOL sobre UNIX. Estuve alrededor de un año y tres meses,
-                                    una etapa muy formativa donde aprendí tanto tecnicismos como aspectos
-                                    funcionales de la banca y contabilidad financiera.
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 7 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item7.title">COBOL Migración</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Nov
-                                            2019</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item7.desc">
-                                    Participé en la migración de Caixa Geral a ABANCA, donde apoyé a los equipos
-                                    resolviendo dudas y analizando cómo los procesos trataban la información.
-                                    Trabajé con z/OS Mainframe y adquirí experiencia práctica en JCL y CICS.
-                                    <a
-                                        href="https://www.lavozdegalicia.es/noticia/economia/2020/03/17/abanca-finaliza-integracion-banco-caixa-geral/0003_202003G17P38995.htm"
-                                        target="_blank" rel="noopener noreferrer" data-translation="timeline.item7.link">
-                                        Artículo sobre la finalización de la integración.
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 8 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item8.title">CFGS DAM ON-LINE</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Sep
-                                            2019 - Mar 2021</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in" data-translation="timeline.item8.desc">
-                                    Compaginé el trabajo con el ciclo formativo de Desarrollo de Aplicaciones
-                                    Multiplataforma (CFGS DAM), lo que me permitió ampliar mis competencias en
-                                    desarrollo y consolidar conocimientos prácticos.
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Item 9 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="hexa"></span>
-                                    <span class="flag" data-aos="zoom-in" data-translation="timeline.item9.title">DXC Technology</span>
-                                    <span class="time-wrapper" data-aos="zoom-out"><span class="time">Feb
-                                            2021 - Actualmente</span></span>
-                                </div>
-                                <div class="desc" data-aos="zoom-in">
-                                    <h6 data-translation="timeline.item9.payments">Medios de pago</h6>
-                                    <div data-translation="timeline.item9.payments_desc">Desarrollo en COBOL sobre una infraestructura compleja en HP NonStop,
-                                    contribuyendo a la implementación y mantenimiento de funcionalidades relacionadas
-                                    con medios de pago.</div>
-                                    <hr>
-                                    <h6 data-translation="timeline.item9.digitalization">Digitalización de documentos</h6>
-                                    <div data-translation="timeline.item9.digitalization_desc">Trabajo en el desarrollo, análisis y testing de una aplicación en Java
-                                    (Spring Boot), además de colaborar en tareas de bases de datos.</div>
-                                </div>
-                            </div>
-                        </li>                        
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Knowledge -->
-            <div class="row" id="knowledge" data-aos="fade-up"> 
-                <div class="col">
-                    <div class="container">
-                        <h2 class="text-center" data-translation="knowledge.title">Conocimientos</h2>
-                        <div class="row mt-3">
-                            <div class="col-md-3">
-                                <div class="list-group" id="lista" role="tablist">
-                                    <a href="#cobol" class="list-group-item list-group-item-action" data-toggle="list"
-                                        role="tab" arial-controls="cobol">
-                                        <span>COBOL</span>
-<!--                                         <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                role="progressbar" style="width: 90%;">90%</div><br>
-                                        </div> -->
-                                    </a>
-
-                                    <a href="#java" class="list-group-item list-group-item-action" data-toggle="list"
-                                        role="tab" arial-controls="java">
-                                        <span>Java</span>
-<!--                                         <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                role="progressbar" style="width: 70%;">70%</div><br>
-                                        </div> -->
-                                    </a>
-
-                                    <a href="#cplusplus" class="list-group-item list-group-item-action" data-toggle="list" role="tab" arial-controls="cplusplus">
-                                        <span>C++</span>
-<!--                                         <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                role="progressbar" style="width: 70%;">70%</div><br>
-                                        </div> -->
-                                    </a>
-
-                                    <a href="#sql" class="list-group-item list-group-item-action" data-toggle="list"
-                                        role="tab" arial-controls="sql">
-                                        <span>SQL</span>
-<!--                                         <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                role="progressbar" style="width: 80%;">80%</div><br>
-                                        </div> -->
-                                    </a>
-
-                                    <a href="#dweb" class="list-group-item list-group-item-action" data-toggle="list" role="tab" arial-controls="dweb">
-                                        <span>Desarrollo web</span>
-<!--                                         <div class="progress" style="background-color:rgb(189, 189, 189)">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                role="progressbar" style="width: 70%;">70%</div><br>
-                                        </div> -->
-                                    </a>
-
-                                </div>
-                                <div class="text-center mt-3">
-                                    <p data-translation="knowledge.more_info">
-                                        Pulse para más información
-                                    </p>                                    
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="tab-content" id="nav-tabContent">
-
-                                    <div class="tab-pane fade show active" id="default" role="tabpanel" aria-labelledby="default">
-                                        <p style="font-size: 20px;" data-translation="knowledge.default">
-                                            Mis conocimientos están en constante crecimiento; siempre intento tener algún proyecto en mente o algo que aprender.
-                                            <hr>
-                                            En los apartados de la izquierda, están más definidos.
-                                        </p>
-                                    </div>
-
-                                    <div class="tab-pane fade show" id="cobol" role="tabpanel" aria-labelledby="cobol">
-                                        <div class="text-center">
-                                                <img src="img/logos/cobol.png" alt="COBOL logo" loading="lazy" width="200" height="200">
-                                            </div>
-                                        <hr>
-                                    <div class="mb-4" data-translation="cobol.content">
-                                        <p>
-                                            Después de finalizar mi ciclo formativo de grado medio, descubrí el mundo de 
-                                            <span class="font-weight-bold">COBOL</span>, un lenguaje que desconocía por completo pero que terminó 
-                                            convirtiéndose en una gran oportunidad profesional. Aunque mi intención inicial era 
-                                            continuar con un grado superior, tuve que incorporarme al mercado laboral y COBOL fue mi 
-                                            punto de entrada. Con el tiempo, se convirtió en un pilar fundamental de mi carrera y, 
-                                            sin duda, en el lenguaje que más me <span class="font-italic">ha impulsado profesionalmente</span>.
-                                        </p>
-
-                                        <p>
-                                            Durante los últimos años he trabajado en sistemas 
-                                            <span class="font-weight-bold">HP NonStop</span>, desarrollando y manteniendo aplicaciones en 
-                                            <span class="font-weight-bold">COBOL y SCOBOL</span>, así como procesos 
-                                            <span class="font-weight-bold">batch</span> vinculados a transacciones bancarias. 
-                                            Poseo experiencia en:
-                                        </p>
-
-                                        <ul>
-                                            <li>Desarrollo y mantenimiento de aplicaciones COBOL y SCOBOL.</li>
-                                            <li>Gestión de transacciones y rutinas en entornos COBOL.</li>
-                                            <li>Procesos batch y ejecución de JOBs.</li>
-                                            <li>Uso de <strong>JCL</strong> en entornos <strong>Mainframe</strong>.</li>
-                                            <li>Ejecución y monitorización de JOBs en <strong>Linux</strong>.</li>
-                                            <li>Entornos transaccionales en sistemas <strong>HP NonStop</strong>.</li>
-                                        </ul>
-
-                                        <p data-translation="sql.figcaption1">
-                                            COBOL fue el lenguaje que más moldeó mi forma de pensar y estructurar código. 
-                                            Con el tiempo he ampliado mis conocimientos hacia otros lenguajes y tecnologías, por lo que 
-                                            actualmente no desarrollo proyectos personales en COBOL —por razones lógicas relacionadas 
-                                            con su ámbito de uso—, aunque sigo manteniendo un alto nivel de comprensión y capacidad técnica 
-                                            sobre este lenguaje.
-                                        </p>
-                                    </div>
-
-                                    </div>
-
-                                    <div class="tab-pane fade show" id="sql" role="tabpanel" aria-labelledby="sql">
-                                        <div class="text-center">
-                                            <img src="img/logos/sql.png" alt="SQL logo" loading="lazy" width="200" height="200">
-                                        </div>
-                                        <hr>
-                                        <div class="mb-4">
-                                            <p data-translation="sql.summary">Tengo un conocimiento sólido en <span class="font-weight-bold">SQL y NoSQL</span>, habiéndolos utilizado en entornos reales con 
-                                                bases de datos de gran volumen. Comprendo el funcionamiento de <span class="font-weight-bold">particiones de tablas, índices</span> 
-                                                y técnicas de optimización de consultas, así como la creación y relación de estructuras complejas.</p>
-
-                                            <p data-translation="sql.tools_intro">He trabajado con diferentes herramientas de gestión de bases de datos:</p>
-                                            <ul>
-                                                <li>SQL Developer</li>
-                                                <li>MySQL Workbench</li>
-                                                <li>DBeaver</li>
-                                                <li>SQLite (para desarrollo móvil)</li>
-                                            </ul>
-
-                                            <p>
-                                                También he sido <span class="font-weight-bold">docente de SQL</span>, impartiendo clases particulares y ayudando a alumnos 
-                                                a avanzar desde los fundamentos hasta consultas complejas.
-                                            </p>
-
-                                            <p>
-                                                En el ámbito profesional he trabajado principalmente con <strong>Oracle</strong> y <strong>DB2</strong>, además de tener 
-                                                experiencia con <strong>MySQL</strong>. Domino <strong>PL/SQL</strong> y soy capaz de desarrollar 
-                                                scripts, procedimientos almacenados y funciones.
-                                            </p>
-
-                                            <p>
-                                                SQL es uno de mis puntos fuertes y ha sido una tecnología constante a lo largo de mi carrera.
-                                            </p>
-                                        </div>
-
-                                        </p>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="contenedor-imagen">
-                                                    <!-- <a href="#" data-toggle="modal" data-target="#modal"> -->
-                                                        <figure class="figure">
-                                                            <img class="img-fluid rounded" src="img/sqldeveloper.png" alt="Oracle SQL Developer" loading="lazy">
-                                                            <figcaption class="figure-caption">
-                                                                <p class="text-center" data-translation="sql.figcaption1">Oracle - SQLDeveloper</p>
-                                                            </figcaption>
-                                                        </figure>
-                                                    <!-- </a> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="contenedor-imagen">                                                    
-                                                    <!-- <a href="#" data-toggle="modal" data-target="#modal"> -->
-                                                        <figure class="figure">
-                                                            <img class="img-fluid rounded" src="img/spufi.jpg" alt="DB2 SPUFI screenshot"
-                                                                width="500" height="500">
-                                                            <figcaption class="figure-caption">
-                                                                <p class="text-center" data-translation="sql.figcaption2">DB2 - SPUFI.</p>
-                                                            </figcaption>
-                                                        </figure>                                                    
-                                                    <!-- </a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade show" id="java" role="tabpanel" aria-labelledby="java">
-                                        <div class="text-center">
-                                            <img src="img/logos/java.png" alt="Java logo" loading="lazy" width="200" height="200">
-                                        </div>
-                                        <hr>
-                                        <p class="mt-2">
-                                            <p data-translation="java.opening">Tengo un conocimiento sólido y actualizado de Java vanilla, mejorando mis habilidades constantemente.</><br>
-                                            <p data-translation="java.experience_intro">Cuento con más de tres años de experiencia en el desarrollo de aplicaciones para CaixaBank utilizando el framework Spring Boot, haciendo uso de diferentes módulos según las necesidades del proyecto, como:</p>
-                                            <ul>
-                                                <li data-translation="java.module.0">Spring Data</li>
-                                                <li data-translation="java.module.1">Spring Test</li>
-                                                <li data-translation="java.module.2">Spring Batch</li>
-                                                <li data-translation="java.module.3">Spring Security</li>
-                                                <li data-translation="java.module.4">Spring Cache</li>
-                                                <li data-translation="java.module.5">Spring Mail</li>
-                                                <li data-translation="java.module.6">Spring Apache Kafka</li>
-                                            </ul>
-                                            <span data-translation="java.teaching">Además, soy docente de Java y he impartido clases particulares a más de cinco alumnos, ayudándolos no solo a aprobar su grado superior sin dificultades, sino también a alcanzar niveles avanzados.</span>
-
-                                            <span data-translation="java.features">Poseo un dominio profundo de interfaces funcionales, expresiones lambda y el uso de Streams, aplicándolos de forma eficiente en entornos reales de desarrollo.</span> <br>
-
-                                            <span data-translation="java.project_desc">Tengo un pequeño proyecto utilizando la librería de JFrame, utilizando IntelliJ IDEA, xamp</span>
-
-                                            <span data-translation="java.project_line">Dejo el enlace de todo el código en mi <a href="https://github.com/conaruisam/Concesionario_Interface-CRUD" target="_blank" rel="noopener noreferrer"> github</a></span>
-                                            <div class="carousel slide d-none d-md-block" id="secondary-carousel" data-ride="carousel">
-                                                <ol class="carousel-indicators">
-                                                    <li data-target="#secondary-carousel" data-slide-to="0" class=""></li>
-                                                    <li data-target="#secondary-carousel" data-slide-to="1" class="active"></li>
-                                                    <li data-target="#secondary-carousel" data-slide-to="2"></li>
-                                                </ol>
-                                                </ol>
-                                                <!--
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item">
-                                                        <img src="img/java.png" alt="" width="900" height="300">
-                                                    </div>
-                                                    <div class="carousel-item active">
-                                                        <img src="img/alta_coche.png" alt="" width="900" height="300">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="img/xampp.png" alt="" width="900" height="300">
-                                                        
-                                                    </div>
-                                                </div>-->
-                            
-                                                <!-- BOTONES PARA ADELANTAR LA FOTO O RETRODECER. -->
-                                                <!-- 
-                                                <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev" style="color: black !important">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-                                                    <span class="sr-only" >Anterior</span>
-                                                </a>
-                                                <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                </a>
-                                                -->
-
-                                            </div>
-
-                                            <div class="contenedor-imagen mt-3">
-                                                <div class="card" >
-                                                    <!-- <a href="#" data-toggle="modal" data-target="#modal"> -->
-                                                        <img src="img/curso-java.jpg" class="img-fluid imagen" alt="Curso Java Udemy" loading="lazy">
-                                                    <!-- </a> -->
-                                                    <div class="card-header">
-                                                        <h4 class="card-title" data-translation="java.course_title">Curso java Udemy</h4> <hr>
-                                                        <h6 class="card-subtitle" data-translation="java.course_sub">
-                                                            También dediqué bastantes horas a este curso de udemy el cual me ayudó mucho <br>
-                                                            <a href="https://www.udemy.com/course/aprende-programacion-en-java-desde-cero/" target="_blank" rel="noopener noreferrer" data-translation="java.course_link">Enlace al curso</a>.
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </p>
-                                    </div>
-
-                                    <div class="tab-pane fade show" id="cplusplus" role="tabpanel" aria-labelledby="cplusplus">
-                                        <div class="text-center">
-                                            <img src="img/logos/cplusplus.png" alt="C++ logo" loading="lazy" width="200" height="200">
-                                        </div>
-                                        <hr>
-                                        <div class="mb-4">
-                                        <p>
-                                            <span class="font-weight-bold">C++</span> es uno de los lenguajes que más disfruto y en el que mayor motivación 
-                                            he encontrado para seguir aprendiendo. Todo mi conocimiento ha sido 
-                                            <span class="font-weight-bold">autodidacta</span>, adquirido mediante foros técnicos, documentación oficial y 
-                                            plataformas de aprendizaje como <span class="font-weight-bold">Udemy</span>.
-                                        </p>
-
-                                        <p>
-                                            También suelo consumir contenido formativo avanzado, especialmente del canal 
-                                            <a href="https://www.youtube.com/c/TheChernoProject/videos" target="_blank" rel="noopener noreferrer">The Cherno</a>, 
-                                            creado por un desarrollador de motores de videojuegos, lo que me ha permitido profundizar en conceptos como 
-                                            optimización, gestión de memoria y arquitectura a bajo nivel.
-                                        </p>
-
-                                        <p>Técnicamente, tengo experiencia en:</p>
-                                        <ul>
-                                            <li data-translation="cplusplus.li.0">Programación orientada a objetos (OOP)</li>
-                                            <li data-translation="cplusplus.li.1">Manejo de memoria y punteros</li>
-                                            <li data-translation="cplusplus.li.2">Uso de <code>Smart Pointers</code></li>
-                                            <li data-translation="cplusplus.li.3">Templates y metaprogramación básica</li>
-                                            <li data-translation="cplusplus.li.4">STL (Standard Template Library)</li>
-                                            <li data-translation="cplusplus.li.5">Estructuras de datos eficientes</li>
-                                            <li data-translation="cplusplus.li.6">Control de flujo y estructuras de control</li>
-                                            <li data-translation="cplusplus.li.7">Buenas prácticas de diseño y optimización</li>
-                                        </ul>
-
-                                        <p data-translation="cplusplus.ending">
-                                            C++ ha sido clave para mejorar mi forma de pensar como programador, especialmente en términos de 
-                                            rendimiento y diseño eficiente de software.
-                                        </p>
-                                    </div>
-
-                                    </div>       
-
-                                    <div class="tab-pane fade show" id="dweb" role="tabpanel" aria-labelledby="dweb">
-                                        <div class="text-center">
-                                            <img src="img/logos/dweb.png" alt="Desarrollo web logo" loading="lazy" width="auto" height="200">
-                                        </div>
-                                        <hr>
-                                        <div class="mb-4">
-                                            <h1 data-translation="dweb.frontend">Front-end</h1>
-                                            <p>
-                                                Mi experiencia en desarrollo web comenzó durante el ciclo formativo de grado medio, aprendiendo 
-                                                <span class="font-weight-bold">HTML, CSS</span> y fundamentos de <span class="font-weight-bold">JavaScript</span>. 
-                                                Durante las prácticas profesionales reforcé estas tecnologías y aprendí a trabajar con 
-                                                <span class="font-weight-bold">AngularJS</span>.
-                                            </p>
-                                            <p>
-                                                Más adelante, durante el ciclo superior, consolidé mis conocimientos en JavaScript y comencé a trabajar con 
-                                                frameworks modernos como <span class="font-weight-bold">ReactJS</span>, tras completar un curso de 10 horas en Udemy. 
-                                                También utilizo <span class="font-weight-bold">Bootstrap</span> para el diseño responsivo y estilizado de interfaces, 
-                                                siendo la base del diseño de esta web.
-                                            </p>
-
-                                            <h1 class="mt-4" data-translation="dweb.backend">Back-end</h1>
-                                            <p>
-                                                En el back-end he trabajado principalmente con <span class="font-weight-bold">COBOL</span> en entornos empresariales. 
-                                                Además, tengo experiencia en <span class="font-weight-bold">Java</span> y desarrollo de <span class="font-weight-bold">microservicios</span>, 
-                                                incluyendo el diseño y la implementación de <span class="font-weight-bold">APIs REST</span>. 
-                                                He diseñado las APIs, gestionado la integración con bases de datos y asegurado la correcta comunicación 
-                                                entre servicios.
-                                            </p>
-                                            <p>
-                                                Gracias a mi conocimiento en orientación a objetos y bases de datos, puedo adaptarme rápidamente a nuevas tecnologías 
-                                                y lenguajes como <span class="font-weight-bold">Ruby</span> o <span class="font-weight-bold">PHP</span>, 
-                                                y aprender frameworks modernos según los requerimientos del proyecto.
-                                            </p>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact -->
-            <!--
-            <div class="form-row mb-5 text-center" id="contacto" data-aos="fade-down">
-                <div class="container">
-                    <form class="form-row" method="POST" action="../cgi-bin/formulario.php">   
-                        <div class="form-group col-md-6">
-                            <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" name="name" placeholder="Nombre" required>
-                        </div>    
-                        <div class="form-group col-md-6">
-                            <label for="lastName">Apellidos</label>
-                            <input type="text" class="form-control" name="lastname" placeholder="Apellidos">
-                        </div>    
-                        <div class="form-group col-md-6">
-                            <label for="inputMail">E-mail</label>
-                            <input type="email" class="form-control" name="email" placeholder="E-mail" required>
-                        </div>    
-                        <div class="form-group col-md-6">
-                            <label for="subject">Asunto</label>
-                            <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
-                        </div>    
-                        <div class="form-group col-12">
-                            <label for="textArea">Mensaje</label>
-                            <textarea class="form-control" name="mensaje" rows="4" placeholder="Escriba su mensaje" required></textarea> 
-                        </div>
-
-                        <div class="col-md-6 mt-3">
-                            <input class="btn btn-primary btn-sm btn-block" type="submit" value="Enviar" name="enviar">                            
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <input class="btn btn-secondary btn-sm btn-block" type="reset" value="Reestablecer" name="reestablecer">
-                        </div>                    
-                        
-                    </form>                     
-                </div>
-            </div>
-            -->
-        </main>
-        
-        <!-- FOOTER -->
-        <footer>
-            <div class="row contenedor" style="background-color: #141417;">
-                <div class="col-sm-12 col-md-4 text-center text-md-left">
-                    
-                    <ul class="social_media" style="padding: 0;">                        
-                        <li>
-                            <a href="https://github.com/conaruisam" target="_blank" rel="noopener noreferrer"><i class="fab fa-github icon"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/isam-zahriou-berrak-116057158/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in icon"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="col-sm-12 col-md-3 text-center">   
-                </div>        
-
-                <div class="col-sm-12 col-md-5  text-center text-md-right ">           
-                    <!-- Copyright -->
-                    <div class="footer-copyright py-3 ">
-                        
-                        <script>
-                            document.write("© "+getAnio()+" Copyright: ")
-                        </script>
-                        
-                        <span>Isam Zahriou Berrak</span>                        
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-     
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Typed.js initialization moved to js/scripts.js to support language switching -->
-    <!-- Para cambiar la transparencia del menú -->
-    <script>
-
-        $(window).scroll(function () {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 740);
-        });
-
-/*         function cambiarClase(comp) {
-            $('nav').toggleClass('buttonaso');
-        }   
- */
-
-    </script>
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS with reduced defaults; respect users' reduced-motion preference
-        (function(){
-            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            if(prefersReduced) {
-                // disable AOS animations
-                AOS.init({ disable: true });
-            } else {
-                AOS.init({
-                    offset: 120,
-                    once: true,
-                    delay: 120,
-                    duration: 700,
-                    easing: 'ease'
-                });
-            }
-        })();
-    </script>
-
+    <section class="contact section-wrap section-pad" id="contacto"><div class="contact-inner"><p class="section-kicker" data-i18n="contactKicker">¿HABLAMOS?</p><h2 data-i18n="contactTitle">Los buenos sistemas<br>empiezan con <em>una conversación.</em></h2><p data-i18n="contactText">Si quieres hablar de ingeniería backend, arquitectura, liderazgo técnico o una oportunidad profesional, estaré encantado de conectar.</p><div class="hero-actions"><a class="button button-primary" href="https://www.linkedin.com/in/isam-/" target="_blank" rel="noreferrer"><span data-i18n="contactLinkedin">Contactar por LinkedIn</span> <span>↗</span></a><a class="button button-quiet" href="https://github.com/conaruisam" target="_blank" rel="noreferrer">Ver GitHub <span>↗</span></a></div></div><div class="contact-stamp">IZ<span>.</span><small data-i18n="contactStamp">BUILD WITH<br>INTENTION</small></div></section>
+  </main>
+  <footer class="footer section-wrap"><a class="brand" href="#inicio"><span class="brand-mark">IZ</span><span>ISAM<span class="brand-dot">.</span></span></a><span>© <span id="year">2026</span> Isam Zahriou Berrak</span><a href="#inicio" data-i18n="backToTop">Volver arriba ↑</a></footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

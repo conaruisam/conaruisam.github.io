@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Portfolio — Isam Zahriou Berrak
 
-You can use the [editor on GitHub](https://github.com/conaruisam/isamzahriou.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Bilingual personal portfolio (Spanish / English), built with plain HTML, CSS and JavaScript and ready for GitHub Pages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Features
+- ES / EN language switch in the main navigation.
+- Remembers the selected language using `localStorage`.
+- Updates page language metadata, title and description.
+- Responsive layout and mobile navigation.
+- No build tools, frameworks or dependencies required.
 
-### Markdown
+## Files
+- `index.html`: content and structure.
+- `styles.css`: responsive design and language-switch styling.
+- `script.js`: translations, language persistence, mobile navigation and footer year.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Publish on GitHub Pages
+1. Download and unzip the project.
+2. Replace the files in your `conaruisam.github.io` repository with the contents of this folder (keep any assets you still need).
+3. Commit and push to the branch configured for GitHub Pages.
+4. Open `https://conaruisam.github.io/` and test both language options on desktop and mobile.
 
-```markdown
-Syntax highlighted code block
+## Before publishing
+- Confirm the LinkedIn URL is correct.
+- Add a professional email address if you want visitors to contact you directly.
+- Review project and technology descriptions to ensure they accurately reflect your experience.
+- Consider adding a professional photo or screenshots of personal projects later.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/conaruisam/isamzahriou.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The portfolio does not include private contact details or unverified professional metrics.
